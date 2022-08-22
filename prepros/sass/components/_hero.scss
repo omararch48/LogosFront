@@ -1,0 +1,26 @@
+/********************************************************/
+/************************* Hero *************************/
+/********************************************************/
+
+
+.hero {
+    .hero__layout {
+        align-items:      center;
+        background-color: rgba(0, 0, 0, 0.3);
+        display:          flex;
+        height:           100vh;
+        justify-content:  center;
+        width:            100%;
+
+        .hero__image {
+            width: 80%;
+        }
+    }
+}
+
+.hero.hero-home {
+    background-image:    url('../img/jpg/forest.jpg');
+    background-size:     cover;    
+    background-position: center/center;
+    background-repeat:   no-repeat;
+}

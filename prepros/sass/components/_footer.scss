@@ -1,0 +1,84 @@
+/**********************************************************/
+/************************* Footer *************************/
+/**********************************************************/
+
+.footer {
+    background-color: var(--main-black);
+    color:            var(--main-white);
+
+    .footer__container {
+        align-items:     center;
+        display:         flex;
+        flex-direction:  column;
+        justify-content: center;
+        margin:          0 auto;
+        padding:         4rem 1rem;
+        width:           min(95%, 80rem);
+
+        .footer__social-message {
+            font-size:   3.6rem;
+            font-weight: normal;
+            text-align:  center;
+        }
+        .footer__social-icons {
+            .footer__social-link {
+                align-items:     center;
+                display:         inline-flex;
+                flex-direction:  row;
+                justify-content: center;
+                margin:          4rem 0;
+                text-decoration: none;
+                transition:      all linear 0.4s;
+                
+                i {
+                    color:     var(--main-white);
+                    font-size: 6rem;                    
+                    margin:    0 4rem;
+                }
+            }
+
+            .footer__social-link:hover {
+                transform: scale(1.6);
+
+                i {
+                    color: var(--complementary-two);
+                }
+            }
+        }
+        
+        .footer__social-copyright {
+            text-align: center;
+        }
+
+        .footer__social-les {
+            .footer__social-les-link {
+                color:           var(--main-white);
+                text-align:      center;
+                text-decoration: none;
+            }
+            .footer__social-les-link:hover {
+                color: var(--complementary-two);
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .footer {    
+        .footer__container {
+            .footer__social-icons {
+                .footer__social-link {
+                    display:        flex;
+                    flex-direction: column;
+                    
+                    i {
+                        color:     var(--main-white);
+                        font-size: 6rem;
+                        margin:    0 4rem;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
