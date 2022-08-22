@@ -74,6 +74,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 0 4rem;
   position: fixed;
   top: 0;
+  transition: top ease-in-out 1s;
   width: 100%;
 }
 .desktop-menu .desktop-menu__navbar .desktop-menu__icon {
