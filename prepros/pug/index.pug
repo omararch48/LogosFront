@@ -8,8 +8,11 @@ block Main
     main#index
         include indexComponents/mosaic.pug
         include indexComponents/messages.pug
+        include indexComponents/slider.pug
+        +Slider(indexSliderOne)
         +Mosaic(titleMosaic, imageMosaicOne, imageMosaicTwo, mosaicText, buttonTextMosaic)
         +Messages(messageOne, messageTwo)
         +Mosaic(titleMosaicTwo, imageMosaicOne, imageMosaicTwo, mosaicText, buttonTextMosaic)(class="mosaic-reverse")
+    script(src="js/app_slider.js")
 block Footer        
     +Footer()

@@ -66,6 +66,10 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: bolder;
 }
 
+.clear-list {
+  list-style: none;
+}
+
 .link-button button {
   background-color: var(--main-black);
   border: solid 0.2rem var(--main-white);
@@ -97,6 +101,7 @@ body::-webkit-scrollbar-thumb:hover {
   top: 0;
   transition: top ease-in-out 1s;
   width: 100%;
+  z-index: 1000;
 }
 .desktop-menu .desktop-menu__navbar .desktop-menu__icon {
   color: var(--main-white);
@@ -145,6 +150,7 @@ body::-webkit-scrollbar-thumb:hover {
   transition: left ease-in-out 1.2s;
   visibility: hidden;
   width: 100vw;
+  z-index: 1000;
 }
 .desktop-menu .desktop-menu__lateral-layout .desktop-menu__lateral {
   align-items: center;
@@ -238,6 +244,7 @@ body::-webkit-scrollbar-thumb:hover {
   top: -20rem;
   transition: top ease-in-out 0.8s;
   width: 100%;
+  z-index: 1000;
 }
 .mobile-menu .mobile-menu__navbar .mobile-menu__navbar-image {
   width: 14rem;
@@ -263,6 +270,7 @@ body::-webkit-scrollbar-thumb:hover {
   transition: top ease-in-out 0.8s;
   visibility: hidden;
   width: 100%;
+  z-index: 1000;
 }
 .mobile-menu .mobile-menu__medium .mobile-menu__medium-inner {
   align-items: center;
@@ -296,8 +304,8 @@ body::-webkit-scrollbar-thumb:hover {
 .mobile-menu .mobile-menu__medium .mobile-menu__medium-inner .mobile-menu__medium-two .mobile-menu__medium-element .mobile-menu__medium-link {
   color: var(--main-white);
   font-size: 2.2rem;
-  text-decoration: none;
   min-width: 20rem;
+  text-decoration: none;
   text-align: center;
 }
 .mobile-menu .mobile-menu__medium .mobile-menu__medium-inner .mobile-menu__medium-one .mobile-menu__medium-element .mobile-menu__medium-link:hover,
@@ -318,19 +326,20 @@ body::-webkit-scrollbar-thumb:hover {
 .mobile-menu .mobile-menu__small {
   display: none;
   height: 100vh;
-  width: 100%;
   position: fixed;
   transition: top ease-in-out 0.8s;
   top: -100%;
   visibility: hidden;
+  width: 100%;
+  z-index: 1000;
 }
 .mobile-menu .mobile-menu__small .mobile-menu__small-inner {
   align-items: center;
   background-color: var(--main-black);
   box-shadow: 0rem 0.2rem 1.6rem var(--main-black);
-  justify-content: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: relative;
   width: 100%;
 }
@@ -568,6 +577,119 @@ body::-webkit-scrollbar-thumb:hover {
   stroke: var(--main-green);
 }
 
+.slider {
+  background-color: transparent;
+  height: 60rem;
+  margin: 4rem auto;
+  max-width: 120rem;
+  position: relative;
+  width: 95%;
+}
+.slider .slider__container {
+  bottom: 5rem;
+  height: calc(100% - 10rem);
+  left: 5rem;
+  position: absolute;
+  right: 5rem;
+  top: 5rem;
+  width: calc(100% - 10rem);
+}
+.slider .slider__container .slider__media {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.slider .slider__container .slider__media .slider__slide {
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  transition: opacity linear 0.6s;
+  width: 100%;
+}
+.slider .slider__container .slider__media .slider__slide .slider__information {
+  align-items: center;
+  background-color: var(--complementary-one);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: 1rem;
+}
+.slider .slider__container .slider__media .slider__slide .slider__information * {
+  margin: 1rem;
+}
+.slider .slider__container .slider__media .slider__slide img {
+  height: 50rem;
+  object-fit: cover;
+  width: 100%;
+}
+.slider .slider__container-buttons {
+  height: 10rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: calc(100% - 14rem);
+  width: 100%;
+  z-index: 100;
+}
+.slider .slider__container-buttons .slider__buttons {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.slider .slider__container-buttons .slider__buttons .slider__button {
+  background-color: rgba(128, 128, 128, 0.5);
+  border: solid 0.2rem rgba(211, 211, 211, 0.5);
+  border-radius: 50%;
+  height: 1.6rem;
+  margin: 0.8rem;
+  width: 1.6rem;
+}
+.slider .slider__container-buttons .slider__buttons .slider__button:hover {
+  background-color: rgb(128, 128, 128);
+  border: solid 0.2rem rgb(211, 211, 211);
+  cursor: pointer;
+}
+.slider .slider__container-buttons .slider__buttons .slider__button.slider__button--selected {
+  background-color: rgb(128, 128, 128);
+  border: solid 0.2rem rgb(211, 211, 211);
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .slider {
+    width: 95%;
+  }
+}
+@media (max-width: 600px) {
+  .slider {
+    height: 90vh;
+    width: 100%;
+  }
+  .slider .slider__container {
+    top: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+    height: calc(100% - 2rem);
+    width: calc(100% - 2rem);
+  }
+  .slider .slider__container .slider__media .slider__slide img {
+    height: 100%;
+  }
+  .slider__container-buttons {
+    bottom: 0;
+    height: 10rem;
+    top: calc(100% + 10rem);
+  }
+  .slider__container-buttons .slider__buttons .slider__button {
+    height: 1.4rem;
+    margin: 0.6rem;
+    width: 1.4rem;
+  }
+}
 /**********************************************************/
 /************************* Footer *************************/
 /**********************************************************/

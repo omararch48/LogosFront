@@ -6,6 +6,10 @@
     font-weight: bolder;
 }
 
+.clear-list {
+    list-style: none;
+}
+
 .link-button button {
     background-color: var(--main-black);
     border:           solid 0.2rem var(--main-white);

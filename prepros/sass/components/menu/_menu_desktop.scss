@@ -14,6 +14,7 @@
         top:              0;
         transition:       top ease-in-out 1s;
         width:            100%;
+        z-index:          1000;
 
         .desktop-menu__icon {
             color:      var(--main-white);
@@ -71,6 +72,7 @@
         transition: left ease-in-out 1.2s;
         visibility: hidden;
         width:      100vw;
+        z-index:    1000;
 
         .desktop-menu__lateral {
             align-items:      center;

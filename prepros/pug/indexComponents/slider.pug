@@ -1,0 +1,16 @@
+mixin Slider(sliderContents)
+    section.slider 
+        .slider__container 
+            ul.slider__media.clear-list
+                each content in sliderContents
+                    if content.length == 1
+                        li.slider__slide: img(src=content[0], loading="lazy")
+                    else
+                        li.slider__slide
+                            .slider__information
+                                h3= content[0]
+                                p= content[1]
+        .slider__container-buttons
+            .slider__buttons
+                each content in sliderContents 
+                    .slider__button

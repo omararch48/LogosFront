@@ -16,6 +16,7 @@
         top:              -20rem;
         transition:       top ease-in-out 0.8s;
         width:            100%;
+        z-index:          1000;
 
         .mobile-menu__navbar-image {
             width: 14rem;
@@ -46,6 +47,7 @@
         transition: top ease-in-out 0.8s;
         visibility: hidden;
         width:      100%;
+        z-index:    1000;
 
         .mobile-menu__medium-inner {
             align-items:      center;
@@ -79,11 +81,11 @@
 
                 .mobile-menu__medium-element {
                     .mobile-menu__medium-link {
-                        color: var(--main-white);
-                        font-size: 2.2rem;
+                        color:           var(--main-white);
+                        font-size:       2.2rem;
+                        min-width:       20rem;
                         text-decoration: none;
-                        min-width: 20rem;
-                        text-align: center;
+                        text-align:      center;
                     }
                     
                     .mobile-menu__medium-link:hover {
@@ -108,23 +110,24 @@
     }
     
     .mobile-menu__small {
-        display: none;
-        height: 100vh;
-        width: 100%;
-        position: fixed;
+        display:    none;
+        height:     100vh;
+        position:   fixed;
         transition: top ease-in-out 0.8s;
-        top: -100%;
+        top:        -100%;
         visibility: hidden;
+        width:      100%;
+        z-index:    1000;
         
         .mobile-menu__small-inner {
-            align-items: center;
+            align-items:      center;
             background-color: var(--main-black);
             box-shadow:       0rem 0.2rem 1.6rem var(--main-black);
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            width: 100%;
+            display:          flex;
+            flex-direction:   column;
+            justify-content:  center;
+            position:         relative;
+            width:            100%;
 
             .fa-solid.fa-xmark.mobile-menu__small-close {
                 color:     var(--main-white);
@@ -141,23 +144,23 @@
 
             .mobile-menu__small-image {
                 border-radius: 50%;
-                margin: 2rem;
-                width: 16rem;
+                margin:        2rem;
+                width:         16rem;
             }
 
             .mobile-menu__small-menu {
                 border-top: solid 0.1rem var(--main-white);
-                padding: 2rem 0;
-                width: 100%;
+                padding:    2rem 0;
+                width:      100%;
 
                 .mobile-menu__small-element {
                     .mobile-menu__small-link {
-                        color: var(--main-white);
-                        display: inline-block;
-                        font-size: 2.2rem;
-                        text-align: center;
+                        color:           var(--main-white);
+                        display:         inline-block;
+                        font-size:       2.2rem;
+                        text-align:      center;
                         text-decoration: none;
-                        width: 100%;
+                        width:           100%;
                     }
                     
                     .mobile-menu__small-link:hover {
