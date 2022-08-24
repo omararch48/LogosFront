@@ -1,0 +1,51 @@
+/************************************************************/
+/************************* Messages *************************/
+/************************************************************/
+
+.messages {
+    align-items:     flex-start;
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: space-evenly;
+    padding:         0 2rem;
+    width:           100%;
+
+    .messages__container {
+        align-items:    center;
+        display:        flex;
+        flex-direction: column;
+        margin:         0 1rem;
+        width:          max(35%, 30rem);
+        
+        .messages__icon svg {
+            transition: all linear 0.4s;
+        }
+
+        .messages__text p {
+            font-size:   2.2rem;
+            line-height: 2.2;
+            transition:  all linear 0.4s;
+        }
+    }
+
+    .messages__container:hover .message-one.messages__text p {
+        color: var(--main-red);
+    }
+
+    .messages__container:hover .message-two.messages__text p {
+        color: var(--main-green);
+    }
+
+    .messages__container:hover .messages__icon svg {
+        height: 260px;
+        width:  260px;
+    }
+
+    .messages__container:hover .message-one.messages__icon svg {
+        stroke: var(--main-red);
+    }
+    
+    .messages__container:hover .message-two.messages__icon svg {
+        stroke: var(--main-green);
+    }
+}

@@ -7,8 +7,9 @@ block Main
     +Header("index", "hero-home")
     main#index
         include indexComponents/mosaic.pug
+        include indexComponents/messages.pug
         +Mosaic(titleMosaic, imageMosaicOne, imageMosaicTwo, mosaicText, buttonTextMosaic)
+        +Messages(messageOne, messageTwo)
         +Mosaic(titleMosaicTwo, imageMosaicOne, imageMosaicTwo, mosaicText, buttonTextMosaic)(class="mosaic-reverse")
-
 block Footer        
     +Footer()
