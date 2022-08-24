@@ -1,0 +1,7 @@
+include header/hero.pug
+include header/menu.pug
+
+mixin Header(page, heroClass)
+    header 
+        +Menu(page)
+        +Hero(page)(class=heroClass)

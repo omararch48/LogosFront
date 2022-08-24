@@ -2,3 +2,24 @@
 /************************* Utilities *************************/
 /*************************************************************/
 
+.bolder {
+    font-weight: bolder;
+}
+
+.link-button button {
+    border: solid 0.2rem var(--main-white);
+    background-color: var(--main-black);
+    color: var(--main-white);
+    font-size: 2.6rem;
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    transition: all linear 0.2s;
+
+}
+
+.link-button button:hover {
+    border: solid 0.2rem var(--complementary-two);
+    color: var(--complementary-two);
+    transform: scale(1.1);
+    cursor: pointer;
+}

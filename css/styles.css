@@ -62,6 +62,27 @@ body::-webkit-scrollbar-thumb:hover {
 /*************************************************************/
 /************************* Utilities *************************/
 /*************************************************************/
+.bolder {
+  font-weight: bolder;
+}
+
+.link-button button {
+  border: solid 0.2rem var(--main-white);
+  background-color: var(--main-black);
+  color: var(--main-white);
+  font-size: 2.6rem;
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  transition: all linear 0.2s;
+}
+
+.link-button button:hover {
+  border: solid 0.2rem var(--complementary-two);
+  color: var(--complementary-two);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 /****************************************************************/
 /************************* Menu Desktop *************************/
 /****************************************************************/
@@ -376,7 +397,12 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   width: 100%;
 }
-.hero .hero__layout .hero__image {
+.hero .hero__layout a {
+  display: flex;
+  width: 100%;
+}
+.hero .hero__layout a .hero__image {
+  margin: 0 auto;
   width: 80%;
 }
 
@@ -387,9 +413,122 @@ body::-webkit-scrollbar-thumb:hover {
   background-repeat: no-repeat;
 }
 
+.hero.hero-us {
+  background-image: url("../img/jpg/people.jpg");
+  background-size: cover;
+  background-position: center/center;
+  background-repeat: no-repeat;
+}
+
+.hero.hero-contact {
+  background-image: url("../img/jpg/forest_3.jpg");
+  background-size: cover;
+  background-position: center/center;
+  background-repeat: no-repeat;
+}
+
+.mosaic {
+  min-height: 100vh;
+  margin: 28rem 0;
+  width: 100%;
+}
+.mosaic .mosaic__row-reverse.mosaic-reverse {
+  flex-direction: row;
+}
+.mosaic .mosaic__row-reverse {
+  flex-direction: row-reverse;
+}
+.mosaic .mosaic-reverse {
+  flex-direction: row-reverse;
+}
+.mosaic .mosaic-reverse .mosaic__title.mosaic-reverse {
+  background-color: var(--main-green);
+}
+.mosaic .mosaic-reverse .mosaic__content.mosaic-reverse {
+  background-color: var(--main-red);
+}
+.mosaic .mosaic__row {
+  display: flex;
+  height: 50vh;
+  width: 100%;
+}
+.mosaic .mosaic__row figure {
+  width: 50%;
+  height: 100%;
+}
+.mosaic .mosaic__row figure .mosaic__image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.mosaic .mosaic__row .mosaic__title {
+  align-items: center;
+  background-color: var(--main-red);
+  color: var(--main-white);
+  display: flex;
+  font-size: 2.8rem;
+  height: 100%;
+  justify-content: center;
+  padding: 4rem;
+  width: 50%;
+}
+.mosaic .mosaic__row .mosaic__title h2 {
+  text-align: center;
+}
+.mosaic .mosaic__row .mosaic__content {
+  align-items: center;
+  background-color: var(--main-green);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  width: 50%;
+}
+.mosaic .mosaic__row .mosaic__content a {
+  color: var(--main-white);
+  text-decoration: none;
+}
+.mosaic .mosaic__row .mosaic__content a:hover {
+  color: var(--complementary-two);
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  .mosaic {
+    min-height: 200vh;
+    margin: 10rem 0;
+    width: 100%;
+  }
+  .mosaic .mosaic__row-reverse.mosaic-reverse {
+    flex-direction: column;
+  }
+  .mosaic .mosaic__row-reverse {
+    flex-direction: column-reverse;
+  }
+  .mosaic .mosaic-reverse {
+    flex-direction: column-reverse;
+  }
+  .mosaic .mosaic__row {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+  .mosaic .mosaic__row figure,
+.mosaic .mosaic__row .mosaic__title,
+.mosaic .mosaic__row .mosaic__content {
+    width: 100%;
+  }
+}
 /**********************************************************/
 /************************* Footer *************************/
 /**********************************************************/
+.footer.footer-single {
+  margin-top: 16rem;
+}
+
 .footer {
   background-color: var(--main-black);
   color: var(--main-white);

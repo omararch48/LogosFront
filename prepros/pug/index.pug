@@ -1,118 +1,14 @@
-doctype html
-html(lang="es")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        //- Fontawesome
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        //- Google Fonts
-        link(rel="preconnect", href="https://fonts.googleapis.com")
-        link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
-        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap")
-        //- Normalize
-        link(rel="stylesheet", href="css/normalize.css")
-        //- Styles
-        link(rel="stylesheet", href="css/styles.css")
-        //- Icon
-        link(rel="icon", href="img/ico/favicon.ico")
-        //- Title
-        title Logos Institute
-    body 
-        header 
-            .desktop-menu 
-                .desktop-menu__navbar
-                    i.fa-solid.fa-bars.desktop-menu__icon
-                    ul.desktop-menu__menu
-                        li.desktop-menu__element
-                            a(href="#").desktop-menu__link.desktop-menu__link--selected Inicio
-                        li.desktop-menu__element
-                            a(href="#").desktop-menu__link Nosotros
-                        li.desktop-menu__element
-                            a(href="#").desktop-menu__link Contacto
-                .desktop-menu__lateral-layout
-                    .desktop-menu__lateral
-                        .desktop-menu__lateral-head
-                            i.fa-solid.fa-xmark.desktop-menu__lateral-close
-                            img(src="img/jpg/sublogo_1.jpg", alt="Logos Institute Logo").desktop-menu__lateral-image
-                        ul.desktop-menu__lateral-menu
-                            li.desktop-menu__lateral-element
-                                a(href="#").desktop-menu__link Inicio
-                            li.desktop-menu__lateral-element
-                                a(href="#").desktop-menu__link Nosotros
-                            li.desktop-menu__lateral-element
-                                a(href="#").desktop-menu__link Servicios
-                            li.desktop-menu__lateral-element
-                                a(href="#").desktop-menu__link Blog
-                            li.desktop-menu__lateral-element
-                                a(href="#").desktop-menu__link Contacto
-                            li.desktop-menu__lateral-element
-                                a(href="#").desktop-menu__link Testomonios
-                            li.desktop-menu__lateral-element
-                                a(href="#").desktop-menu__link Preguntas Frecuentes
-                            li.desktop-menu__lateral-element
-                                a(href="#").desktop-menu__link Acerca de                    
-            .mobile-menu
-                .mobile-menu__navbar 
-                    img(src="img/png/primario_sin_fondo_3.png", alt="Logos Institute Logo").mobile-menu__navbar-image
-                    i.fa-solid.fa-bars.mobile-menu__icon
-                .mobile-menu__medium
-                    .mobile-menu__medium-inner
-                        i.fa-solid.fa-xmark.mobile-menu__medium-close
-                        ul.mobile-menu__medium-one
-                            li.mobile-menu__medium-element
-                                a(href="#").mobile-menu__medium-link Inicio
-                            li.mobile-menu__medium-element
-                                a(href="#").mobile-menu__medium-link Nosotros
-                            li.mobile-menu__medium-element
-                                a(href="#").mobile-menu__medium-link Servicios
-                            li.mobile-menu__medium-element
-                                a(href="#").mobile-menu__medium-link Blog                    
-                        img(src="img/jpg/sublogo_1.jpg", alt="Logos Institute Logo").mobile-menu__medium-image
-                        ul.mobile-menu__medium-two
-                            li.mobile-menu__medium-element
-                                a(href="#").mobile-menu__medium-link Contacto
-                            li.mobile-menu__medium-element
-                                a(href="#").mobile-menu__medium-link Testomonios
-                            li.mobile-menu__medium-element
-                                a(href="#").mobile-menu__medium-link Preguntas Frecuentes
-                            li.mobile-menu__medium-element
-                                a(href="#").mobile-menu__medium-link Acerca de
-                .mobile-menu__small
-                    .mobile-menu__small-inner
-                        i.fa-solid.fa-xmark.mobile-menu__small-close
-                        img(src="img/jpg/sublogo_1.jpg", alt="Logos Institute Logo").mobile-menu__small-image
-                        ul.mobile-menu__small-menu
-                            li.mobile-menu__small-element
-                                a(href="#").mobile-menu__small-link Inicio
-                            li.mobile-menu__small-element
-                                a(href="#").mobile-menu__small-link Nosotros
-                            li.mobile-menu__small-element
-                                a(href="#").mobile-menu__small-link Servicios
-                            li.mobile-menu__small-element
-                                a(href="#").mobile-menu__small-link Blog
-                            li.mobile-menu__small-element
-                                a(href="#").mobile-menu__small-link Contacto
-                            li.mobile-menu__small-element
-                                a(href="#").mobile-menu__small-link Testomonios
-                            li.mobile-menu__small-element
-                                a(href="#").mobile-menu__small-link Preguntas Frecuentes
-                            li.mobile-menu__small-element
-                                a(href="#").mobile-menu__small-link Acerca de
-            .hero.hero-home
-                .hero__layout
-                    img(src="img/png/primario_sin_fondo_3.png", alt="Logos Institute").hero__image
-        footer.footer 
-            .footer__container
-                h3.footer__social-message Siguenos en nuestras redes sociales
-                .footer__social-icons
-                    a(href="#").footer__social-link: i.fa-brands.fa-tiktok
-                    a(href="#").footer__social-link: i.fa-brands.fa-canadian-maple-leaf
-                    a(href="#").footer__social-link: i.fa-brands.fa-facebook
-                span.footer__social-copyright Logos Institute 2022 &nbsp;&nbsp; - &nbsp;&nbsp;Todos los derechos reservados
-                span.footer__social-les
-                    a(href="#").footer__social-les-link Logos Employment Service
-            
+extend components/template.pug
 
-        script(src="js/app_menu.js") 
-        script(src="js/app_scroll.js") 
+
+block Title 
+    +Title("Inicio")
+block Main
+    +Header("index", "hero-home")
+    main#index
+        include indexComponents/mosaic.pug
+        +Mosaic(titleMosaic, imageMosaicOne, imageMosaicTwo, mosaicText, buttonTextMosaic)
+        +Mosaic(titleMosaicTwo, imageMosaicOne, imageMosaicTwo, mosaicText, buttonTextMosaic)(class="mosaic-reverse")
+
+block Footer        
+    +Footer()

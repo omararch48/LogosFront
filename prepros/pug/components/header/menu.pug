@@ -1,0 +1,161 @@
+mixin Menu(page)
+    .desktop-menu 
+        .desktop-menu__navbar
+            i.fa-solid.fa-bars.desktop-menu__icon
+            ul.desktop-menu__menu
+                li.desktop-menu__element
+                    if page == 'index'
+                        a(href="#index").desktop-menu__link.desktop-menu__link--selected Inicio
+                    else 
+                        a(href="index.html").desktop-menu__link Inicio
+                li.desktop-menu__element
+                    if page == 'us'
+                        a(href="#us").desktop-menu__link.desktop-menu__link--selected Nosotros
+                    else 
+                        a(href="us.html").desktop-menu__link Nosotros
+                li.desktop-menu__element
+                    if page == 'contact'
+                        a(href="#contact").desktop-menu__link.desktop-menu__link--selected Contacto
+                    else 
+                        a(href="contact.html").desktop-menu__link Contacto
+        .desktop-menu__lateral-layout
+            .desktop-menu__lateral
+                .desktop-menu__lateral-head
+                    i.fa-solid.fa-xmark.desktop-menu__lateral-close
+                    img(src="img/jpg/sublogo_1.jpg", alt="Logos Institute Logo").desktop-menu__lateral-image
+                ul.desktop-menu__lateral-menu
+                    li.desktop-menu__lateral-element
+                        if page == 'index'
+                            a(href="#index").desktop-menu__link.bolder Inicio
+                        else 
+                            a(href="index.html").desktop-menu__link Inicio
+                    li.desktop-menu__lateral-element
+                        if page == 'us'
+                            a(href="#us").desktop-menu__link.bolder Nosotros
+                        else 
+                            a(href="us.html").desktop-menu__link Nosotros
+                    li.desktop-menu__lateral-element
+                        if page == 'services'
+                            a(href="#services").desktop-menu__link.bolder Servicios
+                        else 
+                            a(href="services.html").desktop-menu__link Servicios
+                    li.desktop-menu__lateral-element
+                        if page == 'blog'
+                            a(href="#blog").desktop-menu__link.bolder Blog
+                        else 
+                            a(href="blog.html").desktop-menu__link Blog
+                    li.desktop-menu__lateral-element
+                        if page == 'contact'
+                            a(href="#contact").desktop-menu__link.bolder Contacto
+                        else 
+                            a(href="contact.html").desktop-menu__link Contacto
+                    li.desktop-menu__lateral-element
+                        if page == 'testimonials'
+                            a(href="#testimonials").desktop-menu__link.bolder Testomonios
+                        else 
+                            a(href="testimonials.html").desktop-menu__link Testimonios
+                    li.desktop-menu__lateral-element
+                        if page == 'qa'
+                            a(href="#qa").desktop-menu__link.bolder Preguntas Frecuentes
+                        else 
+                            a(href="qa.html").desktop-menu__link Preguntas Frecuentes
+                    li.desktop-menu__lateral-element
+                        if page == 'about'
+                            a(href="#about").desktop-menu__link.bolder Acerca de
+                        else 
+                            a(href="about.html").desktop-menu__link Acerca de
+    .mobile-menu
+        .mobile-menu__navbar 
+            img(src="img/png/primario_sin_fondo_3.png", alt="Logos Institute Logo").mobile-menu__navbar-image
+            i.fa-solid.fa-bars.mobile-menu__icon
+        .mobile-menu__medium
+            .mobile-menu__medium-inner
+                i.fa-solid.fa-xmark.mobile-menu__medium-close
+                ul.mobile-menu__medium-one
+                    li.mobile-menu__medium-element
+                        if page == 'index'
+                            a(href="#index").mobile-menu__medium-link.bolder Inicio
+                        else 
+                            a(href="index.html").mobile-menu__medium-link Inicio
+                    li.mobile-menu__medium-element
+                        if page == 'us'
+                            a(href="#us").mobile-menu__medium-link.bolder Nosotros
+                        else 
+                            a(href="us.html").mobile-menu__medium-link Nosotros
+                    li.mobile-menu__medium-element
+                        if page == 'services'
+                            a(href="#services").mobile-menu__medium-link.bolder Servicios
+                        else 
+                            a(href="services.html").mobile-menu__medium-link Servicios
+                    li.mobile-menu__medium-element
+                        if page == 'blog'
+                            a(href="#blog").mobile-menu__medium-link.bolder Blog
+                        else 
+                            a(href="blog.html").mobile-menu__medium-link Blog
+                img(src="img/jpg/sublogo_1.jpg", alt="Logos Institute Logo").mobile-menu__medium-image
+                ul.mobile-menu__medium-two
+                    li.mobile-menu__medium-element
+                        if page == 'contact'
+                            a(href="#contact").mobile-menu__medium-link.bolder Contacto
+                        else 
+                            a(href="contact.html").mobile-menu__medium-link Contacto
+                    li.mobile-menu__medium-element
+                        if page == 'testimonials'
+                            a(href="#testimonials").mobile-menu__medium-link.bolder Testomonios
+                        else 
+                            a(href="testimonials.html").mobile-menu__medium-link Testimonios
+                    li.mobile-menu__medium-element
+                        if page == 'qa'
+                            a(href="#qa").mobile-menu__medium-link.bolder Preguntas Frecuentes
+                        else 
+                            a(href="qa.html").mobile-menu__medium-link Preguntas Frecuentes
+                    li.mobile-menu__medium-element
+                        if page == 'about'
+                            a(href="#about").mobile-menu__medium-link.bolder Acerca de
+                        else 
+                            a(href="about.html").mobile-menu__medium-link Acerca de
+        .mobile-menu__small
+            .mobile-menu__small-inner
+                i.fa-solid.fa-xmark.mobile-menu__small-close
+                img(src="img/jpg/sublogo_1.jpg", alt="Logos Institute Logo").mobile-menu__small-image
+                ul.mobile-menu__small-menu
+                    li.mobile-menu__small-element
+                        if page == 'index'
+                            a(href="#index").mobile-menu__small-link.bolder Inicio
+                        else 
+                            a(href="index.html").mobile-menu__small-link Inicio
+                    li.mobile-menu__small-element
+                        if page == 'us'
+                            a(href="#us").mobile-menu__small-link.bolder Nosotros
+                        else 
+                            a(href="us.html").mobile-menu__small-link Nosotros
+                    li.mobile-menu__small-element
+                        if page == 'services'
+                            a(href="#services").mobile-menu__small-link.bolder Servicios
+                        else 
+                            a(href="services.html").mobile-menu__small-link Servicios
+                    li.mobile-menu__small-element
+                        if page == 'blog'
+                            a(href="#blog").mobile-menu__small-link.bolder Blog
+                        else 
+                            a(href="blog.html").mobile-menu__small-link Blog
+                    li.mobile-menu__small-element
+                        if page == 'contact'
+                            a(href="#contact").mobile-menu__small-link.bolder Contacto
+                        else 
+                            a(href="contact.html").mobile-menu__small-link Contacto
+                    li.mobile-menu__small-element
+                        if page == 'testimonials'
+                            a(href="#testimonials").mobile-menu__small-link.bolder Testomonios
+                        else 
+                            a(href="testimonials.html").mobile-menu__small-link Testimonios
+                    li.mobile-menu__small-element
+                        if page == 'qa'
+                            a(href="#qa").mobile-menu__small-link.bolder Preguntas Frecuentes
+                        else 
+                            a(href="qa.html").mobile-menu__small-link Preguntas Frecuentes
+                    li.mobile-menu__small-element
+                        if page == 'about'
+                            a(href="#about").mobile-menu__small-link.bolder Acerca de
+                        else 
+                            a(href="about.html").mobile-menu__small-link Acerca de

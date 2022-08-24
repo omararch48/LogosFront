@@ -1,0 +1,11 @@
+extend components/template.pug
+
+
+block Title 
+    +Title("Acerca de")
+block Main
+    +Header("about", "")
+    main#about
+        h1 Acerca de
+block Footer
+    +Footer()(class="footer-single")

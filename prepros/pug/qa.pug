@@ -1,0 +1,11 @@
+extend components/template.pug
+
+
+block Title 
+    +Title("Preguntas Frecuentes")
+block Main
+    +Header("qa", "")
+    main#qa
+        h1 Preguntas Frecuentes
+block Footer        
+    +Footer()(class="footer-single")

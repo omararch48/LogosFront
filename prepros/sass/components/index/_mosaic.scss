@@ -1,0 +1,119 @@
+.mosaic {
+    min-height: 100vh;
+    margin: 28rem 0;
+    width: 100%;
+
+    .mosaic__row-reverse.mosaic-reverse {
+        flex-direction: row;
+    }
+
+    .mosaic__row-reverse {
+        flex-direction: row-reverse;
+    }
+
+
+    .mosaic-reverse {
+        flex-direction: row-reverse;
+
+        .mosaic__title.mosaic-reverse {
+            background-color: var(--main-green);
+        }
+
+        .mosaic__content.mosaic-reverse {
+            background-color: var(--main-red);
+        }
+    }
+
+    .mosaic__row {
+        display: flex;
+        height: 50vh;
+        width: 100%;
+
+        figure {
+            width: 50%;
+            height: 100%;
+
+            .mosaic__image {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        
+        .mosaic__title {
+            align-items: center;
+            background-color: var(--main-red);
+            color: var(--main-white);
+            display: flex;
+            font-size: 2.8rem;
+            height: 100%;
+            justify-content: center;
+            padding: 4rem;
+            width: 50%;
+
+            h2{
+                text-align: center;
+            }
+        }
+        
+        .mosaic__content {
+            align-items: center;
+            background-color: var(--main-green);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+            width: 50%;
+
+            a {
+                color:           var(--main-white);
+                text-decoration: none;
+            }
+
+            a:hover {
+                color:           var(--complementary-two);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .mosaic {
+        min-height: 200vh;
+        margin: 10rem 0;
+        width: 100%;
+    
+
+        .mosaic__row-reverse.mosaic-reverse {
+            flex-direction: column;
+        }
+    
+        .mosaic__row-reverse {
+            flex-direction: column-reverse;
+        }
+    
+        .mosaic-reverse {
+            flex-direction: column-reverse;
+        }
+
+
+
+    
+        .mosaic__row {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+
+            figure,
+            .mosaic__title,
+            .mosaic__content {
+                width: 100%;
+            }
+
+        }
+    }    
+}

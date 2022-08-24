@@ -11,9 +11,14 @@
         height:           100vh;
         justify-content:  center;
         width:            100%;
-
-        .hero__image {
-            width: 80%;
+        
+        a {
+            display: flex;
+            width: 100%;
+            .hero__image {
+                margin: 0 auto;
+                width: 80%;
+            }
         }
     }
 }
@@ -25,10 +30,19 @@
     background-repeat:   no-repeat;
 }
 
+.hero.hero-us {
+    background-image:    url('../img/jpg/people.jpg');
+    background-size:     cover;    
+    background-position: center/center;
+    background-repeat:   no-repeat;
+}
+
+.hero.hero-contact {
+    background-image:    url('../img/jpg/forest_3.jpg');
+    background-size:     cover;    
+    background-position: center/center;
+    background-repeat:   no-repeat;
+}
+
 // @media (max-width: 500px) {
-//     .hero {
-//         .hero__layout {
-//             height: 50vh;
-//         }
-//     }
 // }

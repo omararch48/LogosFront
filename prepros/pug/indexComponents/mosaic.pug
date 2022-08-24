@@ -1,0 +1,14 @@
+mixin Mosaic(title, imageOne, imageTwo, mosaicText, buttonText)
+    section.mosaic
+        div(class!=attributes.class).mosaic__row
+            figure 
+                img(src=imageOne, alt="Logos Institute").mosaic__image
+            div(class!=attributes.class).mosaic__title
+                h2 #{title}
+        div(class!=attributes.class).mosaic__row.mosaic__row-reverse
+            figure
+                img(src=imageTwo, alt="Logos Institute").mosaic__image
+            div(class!=attributes.class).mosaic__content
+                a(href="#", target="_blank"): p #{mosaicText}
+                a(href="#").link-button
+                    button #{buttonText}

@@ -1,0 +1,11 @@
+extend components/template.pug
+
+
+block Title 
+    +Title("Blog")
+block Main
+    +Header("blog", "")
+    main#blog
+        h1 Blog
+block Footer
+    +Footer()(class="footer-single")

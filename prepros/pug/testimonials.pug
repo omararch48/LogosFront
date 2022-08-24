@@ -1,0 +1,11 @@
+extend components/template.pug
+
+
+block Title 
+    +Title("Testimonios")
+block Main
+    +Header("testimonials", "")
+    main#testimonials
+        h1 Testimonios
+block Footer        
+    +Footer()(class="footer-single")

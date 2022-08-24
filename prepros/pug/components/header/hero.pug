@@ -1,0 +1,16 @@
+mixin Hero(page)
+    if page == 'about'
+        div(style="margin-top: 100px;") 
+    else if page == 'blog'
+        div(style="margin-top: 100px;") 
+    else if page == 'qa'
+        div(style="margin-top: 100px;") 
+    else if page == 'services'
+        div(style="margin-top: 100px;") 
+    else if page == 'testimonials'
+        div(style="margin-top: 100px;") 
+    else
+        div(class!=attributes.class).hero
+            .hero__layout
+                a(href="#"+page)
+                    img(src="img/png/primario_sin_fondo_3.png", alt="Logos Institute").hero__image
