@@ -1,0 +1,11 @@
+mixin ImageBack(image, title, content, link)
+    section.image-back 
+        img(src=image, alt="Logos Institute Image").image-back__image
+        .image-back__container
+            .image-back__title
+                h3 #{title}
+            .image-back__content 
+                p #{content}
+                
+                a(href="#").link-button
+                    button #{link}

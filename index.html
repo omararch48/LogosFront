@@ -103,7 +103,19 @@
                 <div class="hero__layout"><a href="#index"><img class="hero__image" src="img/png/primario_sin_fondo_3.png" alt="Logos Institute"></a></div>
               </div>
         </header>
-    <main id="index">
+    <main id="index"><span class="button-modal modal-welcome" style="display: none;"></span>
+            <div class="modal-welcome modal-layout">
+              <div class="modal"> <i class="fa-solid fa-xmark modal__close"></i>
+                <div class="modal__information"> 
+                  <h3 class="modal__title">Bienvenidos</h3>
+                  <p class="modal__text">Gracias por acompañarnos en la inauguración de nuestro sitio web. Atentamente, Logos Institute Team</p>
+                </div>
+                <div class="modal__options"> 
+                  <div class="modal__buttons"> <a class="modal__button modal__ok" href="#">Continuar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <section class="slider"> 
               <div class="slider__container"> 
                 <ul class="slider__media clear-list">
@@ -169,6 +181,31 @@
                 </div>
               </div>
             </section>
+            <section class="tabs">
+              <div class="tabs__head"> 
+                <div class="tabs__tab tabs__tab--selected">
+                  <h3>Video 1</h3>
+                </div>
+                <div class="tabs__tab">
+                  <h3>Video 2</h3>
+                </div>
+              </div>
+              <div class="tabs__body">
+                <div class="tabs__container tabs__container--selected"><video src="video.mp4" controls></video></div>
+                <div class="tabs__container"><video src="video2.mp4" controls></video></div>
+              </div>
+            </section>
+            <section class="image-back"> <img class="image-back__image" src="https://www.caracteristicas.co/wp-content/uploads/2018/11/montan%CC%83as-e1543190126108.jpg" alt="Logos Institute Image">
+              <div class="image-back__container">
+                <div class="image-back__title">
+                  <h3>Sección de imagen de fondo</h3>
+                </div>
+                <div class="image-back__content"> 
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p><a class="link-button" href="#">
+                    <button>Ver más</button></a>
+                </div>
+              </div>
+            </section>
             <section class="mosaic">
               <div class="mosaic-reverse mosaic__row">
                 <figure> <img class="mosaic__image" src="https://www.caracteristicas.co/wp-content/uploads/2018/11/montan%CC%83as-e1543190126108.jpg" alt="Logos Institute"></figure>
@@ -183,8 +220,28 @@
                     <button>Ver más</button></a></div>
               </div>
             </section>
+            <section class="tabs">
+              <div class="tabs__head"> 
+                <div class="tabs__tab tabs__tab--selected">
+                  <h3>Video 1</h3>
+                </div>
+                <div class="tabs__tab">
+                  <h3>Video 2</h3>
+                </div>
+                <div class="tabs__tab">
+                  <h3>Video 3</h3>
+                </div>
+              </div>
+              <div class="tabs__body">
+                <div class="tabs__container tabs__container--selected"><video src="video.mp4" controls></video></div>
+                <div class="tabs__container"><video src="video2.mp4" controls></video></div>
+                <div class="tabs__container"><video src="video.mp4" controls></video></div>
+              </div>
+            </section>
     </main>
     <script src="js/app_slider.js"></script>
+    <script src="js/app_tabs.js"></script>
+    <script src="js/app_modal.js"></script>
     <script src="js/app_confetti.js"> </script>
         <footer class="footer"> 
           <div class="footer__container">

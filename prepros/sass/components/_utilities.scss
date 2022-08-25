@@ -10,6 +10,10 @@
     list-style: none;
 }
 
+.color-complementaryTwoHover:hover {
+    color: var(--complementary-two);
+}
+
 .link-button button {
     background-color: var(--main-black);
     border:           solid 0.2rem var(--main-white);
@@ -25,4 +29,8 @@
     color:     var(--complementary-two);
     cursor:    pointer;
     transform: scale(1.1);
+}
+
+.text-center {
+    text-align: center;
 }

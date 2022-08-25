@@ -9,11 +9,21 @@ block Main
         include indexComponents/mosaic.pug
         include indexComponents/messages.pug
         include indexComponents/slider.pug
+        include indexComponents/tabs.pug
+        include indexComponents/imageBack.pug
+        include components/modal.pug
+        span(style="display: none;").button-modal.modal-welcome
+        +Modal(welcomeTitle, welcomeText, welcomeButtons, '')(class="modal-welcome modal-layout")
         +Slider(indexSliderOne)
         +Mosaic(titleMosaic, imageMosaicOne, imageMosaicTwo, mosaicText, buttonTextMosaic)
         +Messages(messageOne, messageTwo)
+        +Tabs(tabsOneTitles, tabsOneContents)
+        +ImageBack(imageMosaicOne, 'Sección de imagen de fondo', messageTwo, 'Ver más')
         +Mosaic(titleMosaicTwo, imageMosaicOne, imageMosaicTwo, mosaicText, buttonTextMosaic)(class="mosaic-reverse")
+        +Tabs(tabsOneTitles2, tabsOneContents2)
     script(src="js/app_slider.js")
+    script(src="js/app_tabs.js")
+    script(src="js/app_modal.js")
     script(src="js/app_confetti.js") 
 
 block Footer        

@@ -1,0 +1,16 @@
+mixin Tabs(titles, contents)
+    section.tabs
+        .tabs__head 
+            each val, index in titles
+                if index == 0 
+                    .tabs__tab.tabs__tab--selected: h3= val
+                else 
+                    .tabs__tab: h3= val
+        .tabs__body
+            each val, index in contents
+                if index == 0 
+                    .tabs__container.tabs__container--selected !{val}
+                else 
+                    .tabs__container !{val}
+
+
