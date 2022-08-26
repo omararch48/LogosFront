@@ -2,8 +2,24 @@
 /************************* Utilities *************************/
 /*************************************************************/
 
+.bg-green {
+    background-color: var(--main-green);
+}
+
+.bg-red {
+    background-color: var(--main-red);
+}
+
 .bolder {
     font-weight: bolder;
+}
+
+.card-shadow {
+    box-shadow: 1rem 1rem 0.8rem var(--black-shadow-light);
+}
+
+.clear-link {
+    text-decoration: none;
 }
 
 .clear-list {
@@ -19,7 +35,7 @@
     border:           solid 0.2rem var(--main-white);
     border-radius:    2rem;
     color:            var(--main-white);
-    font-size:        2.6rem;
+    font-size:        2.4rem;
     padding:          2rem 4rem;
     transition:       all linear 0.2s;
 }
@@ -31,6 +47,52 @@
     transform: scale(1.1);
 }
 
+@media (max-width: 600px) {
+    .link-button button {
+        font-size: 2.2rem;
+        padding:   1.6rem 2.8rem;
+    }
+}
+
 .text-center {
     text-align: center;
+}
+
+.title-red {
+    background-color: var(--main-red);
+}
+
+.title-green {
+    background-color: var(--main-green);
+}
+
+.title-red,
+.title-green {
+    align-items:     center;
+    display:         flex;
+    height:          30rem;
+    justify-content: center;
+    margin:          0 auto;
+    width:           100%;
+
+    * {
+        color: var(--main-white);
+        font-size:  6rem;
+        margin-top: 4rem;
+        padding:    0 4rem;
+        text-align: center;
+        width:      100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .title-red,
+    .title-green {
+        height: 20rem;
+    
+        * {
+            font-size:  4rem;
+            margin-top: 6rem;
+        }
+    }
 }

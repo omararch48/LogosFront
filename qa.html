@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&amp;display=swap"><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/ico/favicon.ico">
@@ -99,10 +99,45 @@
                   </div>
                 </div>
               </div>
-              <div style="margin-top: 100px;"> </div>
         </header>
     <main id="qa">
-      <h1>Preguntas Frecuentes</h1>
+      <section class="qa">
+        <div class="qa title-red">
+          <h3>Preguntas Frecuentes</h3>
+        </div>
+        <div class="qa__container"> 
+          <div class="qa__video" data-aos="zoom-in">
+            <video src="video.mp4" controls></video>
+          </div>
+          <div class="qa__video" data-aos="zoom-in">
+            <video src="video.mp4" controls></video>
+          </div>
+          <div class="qa__question qa-green" data-aos="zoom-in">
+            <div class="qa__question-title">
+              <h3>¿Qué pasa si una vaca come tunas?</h3>
+            </div>
+            <div class="qa__question-question">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+          </div>
+          <div class="qa__question qa-red" data-aos="zoom-in">
+            <div class="qa__question-title">
+              <h3>¿Qué pasa si una vaca come tunas?</h3>
+            </div>
+            <div class="qa__question-question">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+          </div>
+          <div class="qa__question qa-green" data-aos="zoom-in">
+            <div class="qa__question-title">
+              <h3>¿Qué pasa si una vaca come tunas?</h3>
+            </div>
+            <div class="qa__question-question">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
         <footer class="footer-single footer"> 
           <div class="footer__container">
@@ -110,6 +145,8 @@
             <div class="footer__social-icons"><a class="footer__social-link" href="#"><i class="fa-brands fa-tiktok"></i></a><a class="footer__social-link" href="#"><i class="fa-brands fa-canadian-maple-leaf"></i></a><a class="footer__social-link" href="#"><i class="fa-brands fa-facebook"></i></a></div><span class="footer__social-copyright">Logos Institute 2022 &nbsp;&nbsp; - &nbsp;&nbsp;Todos los derechos reservados</span><span class="footer__social-les"><a class="footer__social-les-link" href="#">Logos Employment Service</a></span>
           </div>
         </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({duration: 800, once: true});</script>
     <script src="js/app_menu.js"> </script>
     <script src="js/app_scroll.js"> </script>
   </body>

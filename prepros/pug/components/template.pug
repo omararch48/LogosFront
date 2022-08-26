@@ -13,6 +13,8 @@ html(lang="es")
         link(rel="preconnect", href="https://fonts.googleapis.com")
         link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
         link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap")
+        //- Aos
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         //- Normalize
         link(rel="stylesheet", href="css/normalize.css")
         //- Styles
@@ -29,5 +31,7 @@ html(lang="es")
         block Main
         include footer.pug
         block Footer
+        script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+        script AOS.init({duration: 800, once: true});
         script(src="js/app_menu.js") 
         script(src="js/app_scroll.js") 

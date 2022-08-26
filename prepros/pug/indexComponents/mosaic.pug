@@ -1,5 +1,5 @@
 mixin Mosaic(title, imageOne, imageTwo, mosaicText, buttonText)
-    section.mosaic
+    section(data-aos="fade-down").mosaic
         div(class!=attributes.class).mosaic__row
             figure 
                 img(src=imageOne, alt="Logos Institute").mosaic__image

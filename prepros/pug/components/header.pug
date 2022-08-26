@@ -4,4 +4,9 @@ include header/menu.pug
 mixin Header(page, heroClass)
     header 
         +Menu(page)
-        +Hero(page)(class=heroClass)
+        if page == 'index'
+            +Hero(page)(class=heroClass)
+        if page == 'us'
+            +Hero(page)(class=heroClass)
+        if page == 'contact'
+            +Hero(page)(class=heroClass)

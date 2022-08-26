@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&amp;display=swap"><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/ico/favicon.ico">
@@ -116,7 +116,7 @@
                 </div>
               </div>
             </div>
-            <section class="slider"> 
+            <section class="slider" data-aos="fade-down"> 
               <div class="slider__container"> 
                 <ul class="slider__media clear-list">
                   <li class="slider__slide"><img src="img/jpg/forest.jpg" loading="lazy"></li>
@@ -137,7 +137,7 @@
                 </div>
               </div>
             </section>
-            <section class="mosaic">
+            <section class="mosaic" data-aos="fade-down">
               <div class="mosaic__row">
                 <figure> <img class="mosaic__image" src="https://www.caracteristicas.co/wp-content/uploads/2018/11/montan%CC%83as-e1543190126108.jpg" alt="Logos Institute"></figure>
                 <div class="mosaic__title">
@@ -152,7 +152,7 @@
               </div>
             </section>
             <section class="messages">
-              <div class="messages__container message-one">
+              <div class="messages__container message-one" data-aos="fade-left">
                 <div class="messages__icon message-one"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language-hiragana" width="220" height="220" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 <path d="M4 5h7" />
@@ -166,7 +166,7 @@
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
                 </div>
               </div>
-              <div class="messages__container message-two">
+              <div class="messages__container message-two" data-aos="fade-right">
                 <div class="messages__icon message-two"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="220" height="220" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
@@ -181,7 +181,7 @@
                 </div>
               </div>
             </section>
-            <section class="tabs">
+            <section class="tabs" data-aos="zoom-out">
               <div class="tabs__head"> 
                 <div class="tabs__tab tabs__tab--selected">
                   <h3>Video 1</h3>
@@ -195,7 +195,7 @@
                 <div class="tabs__container"><video src="video2.mp4" controls></video></div>
               </div>
             </section>
-            <section class="image-back"> <img class="image-back__image" src="https://www.caracteristicas.co/wp-content/uploads/2018/11/montan%CC%83as-e1543190126108.jpg" alt="Logos Institute Image">
+            <section class="image-back" data-aos="zoom-in"> <img class="image-back__image" src="https://www.caracteristicas.co/wp-content/uploads/2018/11/montan%CC%83as-e1543190126108.jpg" alt="Logos Institute Image">
               <div class="image-back__container">
                 <div class="image-back__title">
                   <h3>Sección de imagen de fondo</h3>
@@ -206,7 +206,7 @@
                 </div>
               </div>
             </section>
-            <section class="mosaic">
+            <section class="mosaic" data-aos="fade-down">
               <div class="mosaic-reverse mosaic__row">
                 <figure> <img class="mosaic__image" src="https://www.caracteristicas.co/wp-content/uploads/2018/11/montan%CC%83as-e1543190126108.jpg" alt="Logos Institute"></figure>
                 <div class="mosaic-reverse mosaic__title">
@@ -220,7 +220,7 @@
                     <button>Ver más</button></a></div>
               </div>
             </section>
-            <section class="tabs">
+            <section class="tabs" data-aos="zoom-out">
               <div class="tabs__head"> 
                 <div class="tabs__tab tabs__tab--selected">
                   <h3>Video 1</h3>
@@ -249,6 +249,8 @@
             <div class="footer__social-icons"><a class="footer__social-link" href="#"><i class="fa-brands fa-tiktok"></i></a><a class="footer__social-link" href="#"><i class="fa-brands fa-canadian-maple-leaf"></i></a><a class="footer__social-link" href="#"><i class="fa-brands fa-facebook"></i></a></div><span class="footer__social-copyright">Logos Institute 2022 &nbsp;&nbsp; - &nbsp;&nbsp;Todos los derechos reservados</span><span class="footer__social-les"><a class="footer__social-les-link" href="#">Logos Employment Service</a></span>
           </div>
         </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({duration: 800, once: true});</script>
     <script src="js/app_menu.js"> </script>
     <script src="js/app_scroll.js"> </script>
   </body>

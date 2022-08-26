@@ -6,6 +6,30 @@ block Title
 block Main
     +Header("services", "")
     main#services
-        h1 Servicios
+        section.services 
+            .services__title.title-green 
+                h3 Servicios
+            .services__categories 
+                div(data-aos="zoom-out").services__category.card-shadow.bg-red
+                    .services__category-name
+                        h4 Entrenamientos
+                    .services__category-image
+                        img(src="img/png/primario_sin_fondo_3.png", alt="Logos Institute Us")
+                    a(href="services_categories.html").link-button
+                        button Ver más
+                div(data-aos="zoom-in").services__category.card-shadow.bg-green
+                    .services__category-name
+                        h4 Capacitaciones
+                    .services__category-image
+                        img(src="img/png/primario_sin_fondo_3.png", alt="Logos Institute Us")
+                    a(href="services_categories.html").link-button
+                        button Ver más
+                div(data-aos="zoom-out").services__category.card-shadow.bg-red
+                    .services__category-name
+                        h4 Cursos
+                    .services__category-image
+                        img(src="img/png/primario_sin_fondo_3.png", alt="Logos Institute Us")
+                    a(href="services_categories.html").link-button
+                        button Ver más
 block Footer        
     +Footer()(class="footer-single")

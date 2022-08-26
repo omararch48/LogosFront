@@ -1,5 +1,5 @@
 mixin Tabs(titles, contents)
-    section.tabs
+    section(data-aos="zoom-out").tabs
         .tabs__head 
             each val, index in titles
                 if index == 0 
