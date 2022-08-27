@@ -70,15 +70,15 @@
 .title-green {
     align-items:     center;
     display:         flex;
-    height:          30rem;
     justify-content: center;
     margin:          0 auto;
+    padding:         6rem 2rem;
     width:           100%;
 
     * {
-        color: var(--main-white);
+        color:      var(--main-white);
         font-size:  6rem;
-        margin-top: 4rem;
+        margin-top: 6rem;
         padding:    0 4rem;
         text-align: center;
         width:      100%;
@@ -88,11 +88,8 @@
 @media (max-width: 800px) {
     .title-red,
     .title-green {
-        height: 20rem;
-    
         * {
-            font-size:  4rem;
-            margin-top: 6rem;
+            font-size: 4rem;
         }
     }
 }

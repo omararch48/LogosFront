@@ -6,6 +6,29 @@ block Title
 block Main
     +Header("about", "")
     main#about
-        h1 Acerca de
+        section.about
+            div(data-aos="zoom-out").about__title.title-green
+                h3 Acerca de Logos Institute
+            .about__container
+                .about__name-container 
+                    .about__name-left 
+                        h2 i
+                    .about__name
+                        h2.selected Manuel Gilberto Garcia Aguilar 
+                        h2 Omar Daniel Esquivel Sánchez
+                    .about__name-right 
+                        h2 d
+
+                .about__card.card-shadow
+                    .about__card-inner.about__card-inner--selected
+                        img(src="img/jpg/isotipo 1.jpg", alt="Logos Institute Team Image")
+                        p Ceo
+                    .about__card-inner
+                        img(src="img/jpg/isotipo 3.jpg", alt="Logos Institute Team Image")
+                        p Desarrollador
+
+
+
+
 block Footer
     +Footer()(class="footer-single")

@@ -1,0 +1,17 @@
+extend components/template.pug
+
+
+block Title 
+    +Title("Servicios")
+block Main
+    +Header("service", "")
+    main#service
+        section.service
+            div(data-aos="zoom-out").service__title.title-red
+                h3 Curso de inglés super super avanzado
+            .service__container
+                img(data-aos="zoom-out" ,src="img/jpg/isotipo 3.jpg", alt="Logos Institute Us").service__image
+                div(data-aos="zoom-in").service__text 
+                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.            
+block Footer        
+    +Footer()(class="footer-single")

@@ -1,0 +1,38 @@
+.service {
+    width: 100%;
+    
+    .service__container {
+        align-items:     center;
+        display:         flex;
+        font-size:       2.2rem;
+        justify-content: space-between;
+        margin:          10rem auto;
+        max-width:       120rem;
+        padding:         0 4rem;
+        
+        .service__image {
+            width: 40%;
+        }
+        
+        .service__text {
+            line-height: 2.6;
+            width:       50%;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .service {
+        .service__container {
+            flex-direction: column;
+            
+            .service__image {
+                width: 100%;
+            }
+            .service__text {
+                margin-top: 6rem;
+                width:      90%;
+            }
+        }
+    }
+}
