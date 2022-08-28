@@ -26,6 +26,14 @@
     list-style: none;
 }
 
+.color-green {
+    color: var(--main-green);
+}
+
+.color-red {
+    color: var(--main-red);
+}
+
 .color-complementaryTwoHover:hover {
     color: var(--complementary-two);
 }
