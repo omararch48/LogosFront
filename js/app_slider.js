@@ -1,4 +1,6 @@
 const sliders = document.querySelectorAll('.slider ');
+
+
 sliders.forEach((element) => {
     let selected = element.querySelectorAll('.slider__slide');
     let selectedLinks = element.querySelectorAll('.slider__button');

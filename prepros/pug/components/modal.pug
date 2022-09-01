@@ -1,20 +1,23 @@
-mixin Modal(title, text, buttons, linkInfo, line)
+mixin Modal(title, text, content, line, buttons, linkInfo)
+    //- this div contains .modal-layout
     div(class!=attributes.class)
+        //- .modal is modal conainer
         .modal 
+            //- Fontawesome icon
             i.fa-solid.fa-xmark.modal__close
             .modal__information 
                 h3.modal__title=title
-                p.modal__text=text 
+                if text != ''
+                    p.modal__text=text
+                else 
+                    .modal__content !{content}
             .modal__options 
                 if line == 'l'
                     .modal__line
                 .modal__buttons 
                     if buttons.length == 3
                         a(href="#").modal__button.modal__ok #{buttons[0]}
-                        if linkInfo
-                            a(href=linkInfo, target="_blank").modal__button.modal__info #{buttons[1]}
-                        else
-                            a(href="#").modal__button.modal__info #{buttons[1]}
+                        a(href="#").modal__button.modal__info #{buttons[1]}
                         a(href="#").modal__button.modal__cancel #{buttons[2]}
                     else if buttons.length == 2
                         a(href="#").modal__button.modal__ok #{buttons[0]}

@@ -53,7 +53,6 @@ const menuMobileSmallClose = document.querySelector('.mobile-menu__small-close')
 
 
 menuMobileIcon.addEventListener('click', () => {
-
     if (window.innerWidth > 680) {
         menuMobileMedium.style.visibility = 'visible';
         setTimeout(() => {
@@ -138,6 +137,4 @@ document.addEventListener('keydown', ({key}) => {
             }, 1000);
         }
     }
-
-
 });

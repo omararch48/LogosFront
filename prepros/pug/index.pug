@@ -12,8 +12,10 @@ block Main
         include indexComponents/tabs.pug
         include indexComponents/imageBack.pug
         include components/modal.pug
-        span(style="display: none;").button-modal.modal-welcome
-        +Modal(welcomeTitle, welcomeText, welcomeButtons, '')(class="modal-welcome modal-layout")
+        span(style="display: none;").modal-button.modal-welcome
+        
+        +Modal(welcomeTitle, welcomeText, '', '', welcomeButtons, '')(class="modal-welcome modal-layout")
+        
         +Slider(indexSliderOne)
         +Mosaic(titleMosaic, imageMosaicOne, imageMosaicTwo, mosaicText, buttonTextMosaic)
         +Messages(messageOne, messageTwo)

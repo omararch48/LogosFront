@@ -1,17 +1,8 @@
-const names = document.querySelectorAll('.about__name h2');
 let nameIndex = 0;
-const leftArrow = document.querySelector('.fa-circle-arrow-left');
-const rightArrow = document.querySelector('.fa-circle-arrow-right');
-
-
-
-const cardInnerContents = document.querySelectorAll('.about__card-inner');
-
-
-
-
-
-
+const names = document.querySelectorAll('.about__name h2'),
+      leftArrow = document.querySelector('.fa-circle-arrow-left'),
+      rightArrow = document.querySelector('.fa-circle-arrow-right'),
+      cardInnerContents = document.querySelectorAll('.about__card-inner');
 
 
 leftArrow.addEventListener('click', () => {

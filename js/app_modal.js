@@ -1,18 +1,22 @@
-let modalName;
+// ********************************************************************
+// ******************** Get all modals and buttons ********************
+// ********************************************************************
+
+let modalName; // this is for create the modals dictionary
 const modalWindows = document.querySelectorAll('.modal-layout'),
-      modalActivateButtons = document.querySelectorAll('.button-modal'),
-      modalDictionary = {},
-      getModalName = (element) => {
+    modalActivateButtons = document.querySelectorAll('.modal-button'),
+    modalDictionary = {},
+    // this function obtains the name for pair button modal
+    getModalName = (element) => {
         let modalName = '';
         element.classList.forEach((elementClass) => {
-            if (elementClass.substring(0, 3) != 'bg-') {
-                if (elementClass != 'button-modal' && elementClass != 'modal-layout') {
-                    modalName = elementClass;
-                }
+            if (elementClass.substring(0, 4) == 'name') {
+                modalName = elementClass;                
             }
         });
         return modalName;
     },
+    // this function creates the dictionaty {}
     getModalDictionary = () => {
         modalActivateButtons.forEach((element) => {
             let buttonName = getModalName(element);
@@ -57,9 +61,9 @@ modalActivateButtons.forEach((element) => {
             outModal = true;
         });
 
-        modalAceptButton.addEventListener('click', () => {
-            modalDictionary[modalName].classList.remove('modal-active');
-        });
+        // modalAceptButton.addEventListener('click', () => {
+        //     modalDictionary[modalName].classList.remove('modal-active');
+        // });
 
         if (modalCloseButton) {
             modalCloseButton.addEventListener('click', () => {
@@ -78,4 +82,3 @@ document.addEventListener('keydown', ({key}) => {
 
 
 getModalDictionary();
-modalName = getModalName(modalWindows[0]);

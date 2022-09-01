@@ -1,5 +1,6 @@
 const tabs = document.querySelectorAll('.tabs');
 
+
 tabs.forEach((elementTab) => {
     let tabsTabs = elementTab.querySelectorAll('.tabs__tab');
     let tabsContainers = elementTab.querySelectorAll('.tabs__container');
