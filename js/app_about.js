@@ -1,6 +1,8 @@
 let nameIndex = 0;
 const names = document.querySelectorAll('.about__name h2'),
       buttons = document.querySelectorAll('.modal-button'),
+      modals = document.querySelectorAll('.modal-team'),
+      modalsOk = document.querySelectorAll('.modal-team .modal__button.modal__ok'),
       card = document.querySelector('.about__card'),
       leftArrow = document.querySelector('.fa-circle-arrow-left'),
       rightArrow = document.querySelector('.fa-circle-arrow-right'),
@@ -35,4 +37,10 @@ card.addEventListener('click', () => {
     setTimeout(() => {
         buttons[nameIndex].click();
     }, 100);
+});
+
+modalsOk.forEach((element) => {
+    element.addEventListener('click', () => {
+        modals[nameIndex].classList.remove('modal-active');
+    });
 });

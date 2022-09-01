@@ -6,6 +6,27 @@ block Title
 block Main
     +Header("testimonials", "")
     main#testimonials
-        h1 Testimonios
+        section.testimonials
+            .testimonials__title.title-green
+                h3 Testimonios
+            .testimonials__container 
+                .testimonial
+                    h2.testimonial__name Pedro Diaz
+                    .testimonial__content
+                        p.testimonial__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        div(data-aos="zoom-in").testimonial__video
+                            video(src="video.mp4", controls)
+                .testimonial
+                    h2.testimonial__name Juan y Carmen
+                    .testimonial__content
+                        p.testimonial__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        div(data-aos="zoom-in").testimonial__video
+                            video(src="video.mp4", controls)
+                .testimonial
+                    h2.testimonial__name Maria Gomez
+                    .testimonial__content
+                        p.testimonial__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        div(data-aos="zoom-in").testimonial__video
+                            video(src="video.mp4", controls)
 block Footer        
     +Footer()(class="footer-single")

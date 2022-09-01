@@ -36,11 +36,12 @@ block Main
                     .about__card-inner
                         img(src="img/jpg/isotipo 4.jpg", alt="Logos Institute Team Image")
                         p Marketing
-                .about__buttons-container
+                .about__buttons-container.display-none
                     +Button('', 'Manuel Gilberto Garcia Aguilar', '')(class="modal-button name-modal-about-0")
                     +Button('', 'Omar Daniel Esquivel Sánchez', '')(class="modal-button name-modal-about-1")
                     +Button('', 'Maria Perez Perez', '')(class="modal-button name-modal-about-2")
                     +Button('', 'Juan Gomez Gomez', '')(class="modal-button name-modal-about-3")
+                .about__modals-container
                     +Modal(
                         'Manuel Gilberto Garcia Aguilar',
                         '', 

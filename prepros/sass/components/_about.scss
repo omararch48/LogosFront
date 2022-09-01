@@ -1,6 +1,6 @@
 .about {
     .about__container {
-        margin:    10rem auto;
+        margin:    6rem auto;
         max-width: 120rem;
         width:     100%;
 
@@ -56,7 +56,7 @@
             height:           48rem;
             justify-content:  center;
             position:         relative;
-            margin:           10rem auto;
+            margin:           6rem auto;
             min-width:        26rem;
             width:            70%;
 
@@ -92,11 +92,10 @@
     }
 }
 
-
 @media (max-width: 600px) {
     .about {
         .about__container {
-            margin: 8rem auto;
+            margin: 6rem auto;
     
             .about__name-container {
                 .about__name {                    
