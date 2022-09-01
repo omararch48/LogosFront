@@ -6,6 +6,8 @@ block Title
 block Main
     +Header("about", "")
     main#about
+        include components/buttons.pug
+        include components/modal.pug
         section.about
             div(data-aos="zoom-out").about__title.title-green
                 h3 Acerca de Logos Institute
@@ -34,6 +36,44 @@ block Main
                     .about__card-inner
                         img(src="img/jpg/isotipo 4.jpg", alt="Logos Institute Team Image")
                         p Marketing
+                .about__buttons-container
+                    +Button('', 'Manuel Gilberto Garcia Aguilar', '')(class="modal-button name-modal-about-0")
+                    +Button('', 'Omar Daniel Esquivel Sánchez', '')(class="modal-button name-modal-about-1")
+                    +Button('', 'Maria Perez Perez', '')(class="modal-button name-modal-about-2")
+                    +Button('', 'Juan Gomez Gomez', '')(class="modal-button name-modal-about-3")
+                    +Modal(
+                        'Manuel Gilberto Garcia Aguilar',
+                        '', 
+                        '<img src="img/jpg/isotipo 1.jpg" alt="Logos Institute Team Image" /> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, tenetur, molestias ex non dolores corporis voluptatem laudantium eos natus et eius ipsa ducimus? Praesentium eaque laboriosam quis ipsum iste dolorem!</p>', 
+                        '', 
+                        ['Regresar'], 
+                        ''
+                        )(class="name-modal-about-0 modal-layout modal-team")
+                    +Modal(
+                        'Omar Daniel Esquivel Sánchez',
+                        '', 
+                        '<img src="img/jpg/isotipo 3.jpg" alt="Logos Institute Team Image" /> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum.</p>', 
+                        '', 
+                        ['Regresar'], 
+                        ''
+                        )(class="name-modal-about-1 modal-layout modal-team")
+                    +Modal(
+                        'Maria Perez Perez',
+                        '', 
+                        '<img src="img/jpg/isotipo 2.jpg" alt="Logos Institute Team Image" /> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, tenetur, molestias ex non dolores corporis voluptatem laudantium eos natus et eius ipsa ducimus? Praesentium eaque laboriosam quis ipsum iste dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, tenetur, molestias ex non dolores corporis voluptatem laudantium eos natus et eius ipsa ducimus? Praesentium eaque laboriosam quis ipsum iste dolorem!</p>', 
+                        '', 
+                        ['Regresar'], 
+                        ''
+                        )(class="name-modal-about-2 modal-layout modal-team")
+                    +Modal(
+                        'Juan Gomez Gomez',
+                        '', 
+                        '<img src="img/jpg/isotipo 4.jpg" alt="Logos Institute Team Image" /> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, tenetur, molestias ex non dolores.</p>', 
+                        '', 
+                        ['Regresar'], 
+                        ''
+                        )(class="name-modal-about-3 modal-layout modal-team")
     script(src="js/app_about.js") 
+    script(src="js/app_modal.js") 
 block Footer
     +Footer()(class="footer-single")

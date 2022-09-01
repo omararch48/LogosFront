@@ -1,5 +1,7 @@
 let nameIndex = 0;
 const names = document.querySelectorAll('.about__name h2'),
+      buttons = document.querySelectorAll('.modal-button'),
+      card = document.querySelector('.about__card'),
       leftArrow = document.querySelector('.fa-circle-arrow-left'),
       rightArrow = document.querySelector('.fa-circle-arrow-right'),
       cardInnerContents = document.querySelectorAll('.about__card-inner');
@@ -27,4 +29,10 @@ rightArrow.addEventListener('click', () => {
     }
     names[nameIndex].classList.add('selected');
     cardInnerContents[nameIndex].classList.add('about__card-inner--selected');
+});
+
+card.addEventListener('click', () => {
+    setTimeout(() => {
+        buttons[nameIndex].click();
+    }, 100);
 });

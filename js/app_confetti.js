@@ -1,5 +1,5 @@
 const jsConfetti = new JSConfetti();
-const welcomeButton = document.querySelector('.modal-button.modal-welcome');
+const welcomeButton = document.querySelector('.modal-button.name-modal-welcome');
 
 
 setTimeout(() => {

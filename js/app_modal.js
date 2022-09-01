@@ -37,7 +37,6 @@ modalActivateButtons.forEach((element) => {
     element.addEventListener('click', () => {
         modalName = getModalName(element);
         modalDictionary[modalName].classList.add('modal-active');
-
         let outModal = true,
             modal = document.querySelector(`.${modalName} .modal`),
             modalClose = document.querySelector(`.${modalName} .modal__close`),

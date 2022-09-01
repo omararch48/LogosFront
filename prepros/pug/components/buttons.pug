@@ -1,0 +1,7 @@
+mixin Button(type, text, link)
+    if type == 'link'
+        a(href=link, class="button-link"): button(class!=attributes.class, class="generated-button") #{text}
+    else if type == 'link_new'
+        a(href=link, class="button-link", target="_blank"): button(class!=attributes.class, class="generated-button") #{text}
+    else 
+        button(class!=attributes.class, class="generated-button") #{text}

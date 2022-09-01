@@ -12,10 +12,9 @@ block Main
         include indexComponents/tabs.pug
         include indexComponents/imageBack.pug
         include components/modal.pug
-        span(style="display: none;").modal-button.modal-welcome
-        
-        +Modal(welcomeTitle, welcomeText, '', '', welcomeButtons, '')(class="modal-welcome modal-layout")
-        
+        include components/buttons.pug
+        +Button('', 'Welcome', '')(class="modal-button name-modal-welcome display-none")
+        +Modal(welcomeTitle, welcomeText, '', '', welcomeButtons, '')(class="name-modal-welcome modal-layout")
         +Slider(indexSliderOne)
         +Mosaic(titleMosaic, imageMosaicOne, imageMosaicTwo, mosaicText, buttonTextMosaic)
         +Messages(messageOne, messageTwo)
@@ -23,10 +22,10 @@ block Main
         +ImageBack(imageMosaicOne, 'Sección de imagen de fondo', messageTwo, 'Ver más')
         +Mosaic(titleMosaicTwo, imageMosaicOne, imageMosaicTwo, mosaicText, buttonTextMosaic)(class="mosaic-reverse")
         +Tabs(tabsOneTitles2, tabsOneContents2)
+    script(src="js/app_confetti.js") 
+    script(src="js/app_modalWelcome.js")
     script(src="js/app_slider.js")
     script(src="js/app_tabs.js")
-    script(src="js/app_modal.js")
-    script(src="js/app_confetti.js") 
-
+    script(src="js/app_modal.js") 
 block Footer        
     +Footer()
