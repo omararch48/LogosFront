@@ -943,78 +943,6 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 0 4rem;
   }
 }
-.modal-team.modal-layout .modal {
-  background-color: var(--main-red);
-  border-radius: 4rem 0;
-  height: 46rem;
-  width: 70rem;
-}
-.modal-team.modal-layout .modal .modal__close {
-  color: var(--main-white);
-}
-.modal-team.modal-layout .modal .modal__close:hover {
-  color: var(--complementary-two);
-}
-.modal-team.modal-layout .modal .modal__information .modal__title {
-  color: var(--main-white);
-}
-.modal-team.modal-layout .modal .modal__information .modal__content {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  height: 24rem;
-  justify-content: space-around;
-  width: 100%;
-}
-.modal-team.modal-layout .modal .modal__information .modal__content img {
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  width: 40%;
-}
-.modal-team.modal-layout .modal .modal__information .modal__content p {
-  color: var(--main-white);
-  max-height: 22rem;
-  overflow-y: auto;
-  padding: 1rem;
-  width: 50%;
-}
-.modal-team.modal-layout .modal .modal__information .modal__content p::-webkit-scrollbar {
-  border-radius: 1rem;
-  width: 1.2rem;
-}
-.modal-team.modal-layout .modal .modal__information .modal__content p::-webkit-scrollbar-thumb {
-  background-color: var(--complementary-one);
-  border-radius: 1rem;
-}
-.modal-team.modal-layout .modal .modal__information .modal__content p::-webkit-scrollbar-thumb:hover {
-  background-color: var(--main-green);
-  border-radius: 1rem;
-}
-
-@media (max-width: 780px) {
-  .modal-team.modal-layout .modal {
-    height: 86vh;
-    width: 95%;
-  }
-  .modal-team.modal-layout .modal .modal__information .modal__content {
-    flex-direction: column;
-    height: 34rem;
-  }
-  .modal-team.modal-layout .modal .modal__information .modal__content img {
-    width: 16rem;
-  }
-  .modal-team.modal-layout .modal .modal__information .modal__content p {
-    width: 90%;
-  }
-  .modal-team.modal-layout .modal .modal__options .modal__buttons {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .modal-team.modal-layout .modal .modal__options .modal__buttons .modal__button {
-    text-align: center;
-    width: 100%;
-  }
-}
 .modal-active.modal-layout {
   opacity: 1;
   transition: opacity ease 0.2s, visibility ease 0.2s;
@@ -1170,12 +1098,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .modal-layout .modal .modal__options .modal__buttons .modal__info:hover {
   background-color: var(--button-blue-hover);
+  cursor: pointer;
 }
 .modal-layout .modal .modal__options .modal__buttons .modal__cancel {
   background-color: var(--button-red);
 }
 .modal-layout .modal .modal__options .modal__buttons .modal__cancel:hover {
   background-color: var(--button-red-hover);
+  cursor: pointer;
 }
 
 @media (max-width: 450px) {
@@ -1668,6 +1598,78 @@ body::-webkit-scrollbar-thumb:hover {
     width: 22rem;
   }
 }
+.modal-team.modal-layout .modal {
+  background-color: var(--main-red);
+  border-radius: 4rem 0;
+  height: 46rem;
+  width: 70rem;
+}
+.modal-team.modal-layout .modal .modal__close {
+  color: var(--main-white);
+}
+.modal-team.modal-layout .modal .modal__close:hover {
+  color: var(--complementary-two);
+}
+.modal-team.modal-layout .modal .modal__information .modal__title {
+  color: var(--main-white);
+}
+.modal-team.modal-layout .modal .modal__information .modal__content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 24rem;
+  justify-content: space-around;
+  width: 100%;
+}
+.modal-team.modal-layout .modal .modal__information .modal__content img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 40%;
+}
+.modal-team.modal-layout .modal .modal__information .modal__content p {
+  color: var(--main-white);
+  max-height: 22rem;
+  overflow-y: auto;
+  padding: 1rem;
+  width: 50%;
+}
+.modal-team.modal-layout .modal .modal__information .modal__content p::-webkit-scrollbar {
+  border-radius: 1rem;
+  width: 1.2rem;
+}
+.modal-team.modal-layout .modal .modal__information .modal__content p::-webkit-scrollbar-thumb {
+  background-color: var(--complementary-one);
+  border-radius: 1rem;
+}
+.modal-team.modal-layout .modal .modal__information .modal__content p::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-green);
+  border-radius: 1rem;
+}
+
+@media (max-width: 780px) {
+  .modal-team.modal-layout .modal {
+    height: 86vh;
+    width: 95%;
+  }
+  .modal-team.modal-layout .modal .modal__information .modal__content {
+    flex-direction: column;
+    height: 34rem;
+  }
+  .modal-team.modal-layout .modal .modal__information .modal__content img {
+    width: 16rem;
+  }
+  .modal-team.modal-layout .modal .modal__information .modal__content p {
+    width: 90%;
+  }
+  .modal-team.modal-layout .modal .modal__options .modal__buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .modal-team.modal-layout .modal .modal__options .modal__buttons .modal__button {
+    text-align: center;
+    width: 100%;
+  }
+}
 .testimonials .testimonials__container {
   margin: 8rem auto;
   width: 100%;
@@ -1691,8 +1693,8 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: space-evenly;
 }
 .testimonials .testimonials__container .testimonial .testimonial__content .testimonial__text {
-  text-align: center;
   font-style: italic;
+  text-align: center;
   width: 40%;
 }
 .testimonials .testimonials__container .testimonial .testimonial__content .testimonial__video {
@@ -1723,6 +1725,108 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .testimonials .testimonials__container .testimonial .testimonial__content .testimonial__video {
     width: 90%;
+  }
+}
+.social-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8rem auto;
+  max-width: 120rem;
+  width: 100%;
+}
+.social-section h2 {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+.social-section .social-section__container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+.social-section .social-section__container .social-section__item {
+  align-items: center;
+  display: flex;
+  flex-basis: max(26rem, 28%);
+  font-size: 12rem;
+  justify-content: center;
+  margin: 6rem 0;
+  transition: all ease-in-out 0.4s;
+}
+.social-section .social-section__container .social-section__item:hover {
+  color: var(--main-red);
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+.modal-social.modal-layout .modal {
+  background-color: var(--complementary-two);
+  border-radius: 4rem 0;
+  height: 44rem;
+}
+.modal-social.modal-layout .modal .modal__close {
+  color: var(--main-green);
+}
+.modal-social.modal-layout .modal .modal__close:hover {
+  color: var(--main-red);
+}
+.modal-social.modal-layout .modal .modal__information .modal__title {
+  color: var(--main-green);
+  font-size: 3.6rem;
+}
+.modal-social.modal-layout .modal .modal__information .modal__content {
+  align-items: center;
+  color: var(--main-green);
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  justify-content: center;
+  margin: 0;
+}
+.modal-social.modal-layout .modal .modal__information .modal__content i {
+  font-size: 8rem;
+  margin-bottom: 4rem;
+}
+.modal-social.modal-layout .modal .modal__information .modal__content i:hover {
+  color: var(--main-red);
+  cursor: pointer;
+}
+.modal-social.modal-layout .modal .modal__information .modal__content p {
+  color: var(--main-green);
+  margin: 0 auto;
+  overflow-y: auto;
+}
+.modal-social.modal-layout .modal .modal__information .modal__content p::-webkit-scrollbar {
+  border-radius: 1rem;
+  width: 1.2rem;
+}
+.modal-social.modal-layout .modal .modal__information .modal__content p::-webkit-scrollbar-thumb {
+  background-color: var(--main-green);
+  border-radius: 1rem;
+}
+.modal-social.modal-layout .modal .modal__information .modal__content p::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-red);
+  border-radius: 1rem;
+}
+
+@media (max-width: 500px) {
+  .modal-layout .modal {
+    height: auto;
+    width: 95%;
+  }
+  .modal-layout .modal .modal__options .modal__buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .modal-layout .modal .modal__options .modal__buttons .modal__button {
+    text-align: center;
+    width: 100%;
   }
 }
 

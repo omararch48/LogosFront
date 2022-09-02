@@ -5,27 +5,27 @@
 
         .testimonial {
             border-radius: 4rem 0;
-            margin: 8rem auto;
-            padding: 2rem 4rem;
-            transition: all ease 0.8s;
-            width: 80%;
+            margin:        8rem auto;
+            padding:       2rem 4rem;
+            transition:    all ease 0.8s;
+            width:         80%;
 
             .testimonial__name {
-                font-size: 4rem;
+                font-size:      4rem;
                 padding-bottom: 4rem;
-                text-align: center;
+                text-align:     center;
             }
 
             .testimonial__content {
-                align-items: center;
-                display: flex;
-                flex-direction: row;
+                align-items:     center;
+                display:         flex;
+                flex-direction:  row;
                 justify-content: space-evenly;
 
                 .testimonial__text {
-                    text-align: center;
                     font-style: italic;
-                    width: 40%;
+                    text-align: center;
+                    width:      40%;
                 }
                 
                 .testimonial__video {
@@ -40,7 +40,7 @@
 
         .testimonial:hover {
             background-color: var(--complementary-one);
-            box-shadow: 1rem 1rem 0.8rem var(--black-shadow-light);
+            box-shadow:       1rem 1rem 0.8rem var(--black-shadow-light);
         }
     }
 }
@@ -49,18 +49,17 @@
     .testimonials {
         .testimonials__container {
             margin: 8rem auto;
-            width: 100%;
+            width:  100%;
     
             .testimonial {
                 width: 90%;
-    
     
                 .testimonial__content {
                     flex-direction: column-reverse;
     
                     .testimonial__text {
                         margin-top: 4rem;
-                        width: 80%;
+                        width:      80%;
                     }
                     
                     .testimonial__video {

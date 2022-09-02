@@ -1,0 +1,84 @@
+.modal-social.modal-layout {
+    .modal {
+        background-color: var(--complementary-two);
+        border-radius:    4rem 0;
+        height:           44rem;
+
+        .modal__close {
+            color: var(--main-green);
+        }
+        
+        .modal__close:hover {
+            color: var(--main-red);
+        }
+
+        .modal__information {
+            .modal__title {
+                color:     var(--main-green);
+                font-size: 3.6rem;
+            }
+            
+            .modal__content {
+                align-items:     center;
+                color:           var(--main-green);
+                display:         flex;
+                flex-direction:  column;
+                height:          20rem;
+                justify-content: center;
+                margin:          0;
+                
+                i {
+                    font-size:     8rem;
+                    margin-bottom: 4rem;
+                }
+
+                i:hover {
+                    color:  var(--main-red);
+                    cursor: pointer;
+                }
+                
+                p {
+                    color:      var(--main-green);
+                    margin:     0 auto;
+                    overflow-y: auto;
+                }
+
+                p::-webkit-scrollbar {
+                    border-radius: 1rem;
+                    width:         1.2rem;                    
+                }
+                
+                p::-webkit-scrollbar-thumb {
+                    background-color: var(--main-green);
+                    border-radius:    1rem;
+                }
+                
+                p::-webkit-scrollbar-thumb:hover {
+                    background-color: var(--main-red);
+                    border-radius:    1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .modal-layout {
+        .modal {        
+            height: auto;
+            width:  95%;
+    
+            .modal__options {
+                .modal__buttons {
+                    flex-direction:  column;
+                    justify-content: center;
+                    
+                    .modal__button {
+                        text-align: center;
+                        width:      100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -103,9 +103,111 @@
                 <div class="hero__layout"><a href="#contact"><img class="hero__image" src="img/png/primario_sin_fondo_3.png" alt="Logos Institute"></a></div>
               </div>
         </header>
-    <main id="index">
-      <h1>Contacto</h1>
+    <main id="contact">
+      <section class="social-section"> 
+        <h2>Nuestras redes sociales </h2>
+        <div class="social-section__container">
+          <div class="social-section__item fa-brands fa-tiktok"></div>
+          <div class="social-section__item fa-brands fa-canadian-maple-leaf"></div>
+          <div class="social-section__item fa-brands fa-facebook"></div>
+          <div class="social-section__item fa-brands fa-instagram"></div>
+          <div class="social-section__item fa-brands fa-twitter"></div>
+        </div>
+        <div class="social-section__buttons display-none">
+                <button class="modal-button name-modal-social-0 generated-button">tiktok</button>
+                <button class="modal-button name-modal-social-1 generated-button">logos</button>
+                <button class="modal-button name-modal-social-2 generated-button">facebook</button>
+                <button class="modal-button name-modal-social-3 generated-button">instagram</button>
+                <button class="modal-button name-modal-social-4 generated-button">twitter</button>
+        </div>
+        <div class="social-section__modals">
+                <div class="name-modal-social-0 modal-layout modal-social">
+                  <div class="modal"> <i class="fa-solid fa-xmark modal__close"></i>
+                    <div class="modal__information"> 
+                      <h3 class="modal__title">Tiktok</h3>
+                      <div class="modal__content"><i class="icon fa-brands fa-tiktok"></i><p>Lorem ipsum dolor sit</p></div>
+                    </div>
+                    <div class="modal__options"> 
+                      <div class="modal__buttons"> <span class="modal__button modal__ok">Ir al sitio</span><span class="modal__button modal__cancel">Regresar</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="name-modal-social-1 modal-layout modal-social">
+                  <div class="modal"> <i class="fa-solid fa-xmark modal__close"></i>
+                    <div class="modal__information"> 
+                      <h3 class="modal__title">Logos</h3>
+                      <div class="modal__content"><i class="icon fa-brands fa-canadian-maple-leaf"></i><p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit</p></div>
+                    </div>
+                    <div class="modal__options"> 
+                      <div class="modal__buttons"> <span class="modal__button modal__ok">Ir al sitio</span><span class="modal__button modal__cancel">Regresar</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="name-modal-social-2 modal-layout modal-social">
+                  <div class="modal"> <i class="fa-solid fa-xmark modal__close"></i>
+                    <div class="modal__information"> 
+                      <h3 class="modal__title">Facebook</h3>
+                      <div class="modal__content"><i class="icon fa-brands fa-facebook"></i><p>Lorem ipsum dolor sit</p></div>
+                    </div>
+                    <div class="modal__options"> 
+                      <div class="modal__buttons"> <span class="modal__button modal__ok">Ir al sitio</span><span class="modal__button modal__cancel">Regresar</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="name-modal-social-3 modal-layout modal-social">
+                  <div class="modal"> <i class="fa-solid fa-xmark modal__close"></i>
+                    <div class="modal__information"> 
+                      <h3 class="modal__title">Instagram</h3>
+                      <div class="modal__content"><i class="icon fa-brands fa-instagram"></i><p>Lorem ipsum dolor sit</p></div>
+                    </div>
+                    <div class="modal__options"> 
+                      <div class="modal__buttons"> <span class="modal__button modal__ok">Ir al sitio</span><span class="modal__button modal__cancel">Regresar</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="name-modal-social-4 modal-layout modal-social">
+                  <div class="modal"> <i class="fa-solid fa-xmark modal__close"></i>
+                    <div class="modal__information"> 
+                      <h3 class="modal__title">Twitter</h3>
+                      <div class="modal__content"><i class="icon fa-brands fa-twitter"></i><p>Lorem ipsum dolor sit</p></div>
+                    </div>
+                    <div class="modal__options"> 
+                      <div class="modal__buttons"> <span class="modal__button modal__ok">Ir al sitio</span><span class="modal__button modal__cancel">Regresar</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </section>
     </main>
+    <script src="js/app_modal.js"></script>
+    <script src="js/app_modalContact.js"></script>
+    <script>
+         const okButtons = document.querySelectorAll('.modal__button.modal__ok'),
+               icons = document.querySelectorAll('.modal .icon'),
+               social = [
+                 'https://www.tiktok.com',
+                 'https://www.tiktok.com',
+                 'https://www.facebook.com',
+                 'https://www.instagram.com',
+                 'https://www.twitter.com',
+               ];
+         okButtons.forEach(function(element, index) {
+             element.addEventListener('click', function() {
+                 window.open(social[index]);
+             });
+         });
+         console.log(icons);
+         icons.forEach(function(element, index) {
+             element.addEventListener('click', function() {
+                 window.open(social[index]);
+             });
+         });
+    </script>
         <footer class="footer"> 
           <div class="footer__container">
             <h3 class="footer__social-message">Siguenos en nuestras redes sociales</h3>

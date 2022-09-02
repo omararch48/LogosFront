@@ -1,0 +1,41 @@
+.social-section {
+    align-items:     center;
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+    margin:          8rem auto;
+    max-width:       120rem;
+    width:           100%;
+
+    h2 {
+        font-size:     4rem;
+        margin-bottom: 4rem;
+        padding:       0 1rem ;
+        text-align:    center;
+    }
+
+    .social-section__container {
+        align-items:     center;
+        display:         flex;
+        flex-wrap:       wrap;
+        gap:             2rem;
+        justify-content: center;
+        width:           100%;
+
+        .social-section__item {
+            align-items:     center;
+            display:         flex;
+            flex-basis:      max(26rem, 28%);
+            font-size:       12rem;
+            justify-content: center;
+            margin:          6rem 0;
+            transition:      all ease-in-out 0.4s;
+        }
+
+        .social-section__item:hover {
+            color:     var(--main-red);
+            cursor:    pointer;
+            transform: scale(1.4);
+        }
+    }
+}
