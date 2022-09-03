@@ -1,0 +1,74 @@
+.blog {
+    .blog__post-container {
+        align-items:     center;
+        display:         flex;
+        flex-wrap:       wrap;
+        justify-content: center;
+        margin:          8rem auto;
+        max-width:       120rem;
+        width:           95%;
+
+        .blog__post:hover {
+            background-color: var(--complementary-one);
+            box-shadow:       1rem 1rem 0.8rem var(--black-shadow-light);
+            transform:        scale(1.02);
+        }
+
+        .blog__post {
+            align-items:     center;
+            border-radius:   4rem 0;
+            display:         flex;
+            flex-direction:  column;
+            height:          72rem;
+            justify-content: space-between;
+            margin:          4rem 1rem;
+            padding:         2rem;
+            transition:      all ease 0.4s;
+            width:           34rem;
+
+            .blog__post-image {                
+                img {
+                    height:     20rem;
+                    margin-top: 1rem;
+                    object-fit: cover;
+                    width:      26rem;
+                }
+            }
+
+            .blog__post-title {
+                h3 {
+                    text-align: center;
+                }
+            }
+
+            .blog__post-categories {
+                align-items:     center;
+                display:         flex;
+                flex-wrap:       wrap;
+                justify-content: center;
+                margin:          0 auto;
+                width:           100%;
+
+                a {
+                    color:           var(--main-black);
+                    margin:          0 0.5rem;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: var(--main-white);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .blog {
+        .blog__post-container {
+            .blog__post {
+                width: 28rem;
+            }
+        }
+    }
+}
