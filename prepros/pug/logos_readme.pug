@@ -1,0 +1,101 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //- Fontawesome
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        //- Google Fonts
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap")
+        link(rel="stylesheet", href="css/normalize.css")
+        link(rel="stylesheet", href="css/styles.css")
+        title Logos Institute | Manual
+    body 
+        main#manual.manual
+            a(href="#manual")
+                .arrow-menu.fa-solid.fa-arrow-up
+            span.manual-top
+                img(src="img/png/primario_sin_fondo_3.png", alt="Logos Institute Name")
+                span Manual
+            nav.manual-navbar 
+                ul.manual-menu 
+                    li: a(href="#general") General
+                    li: a(href="#index") Inicio
+                    li: a(href="#us") Nosotros
+                    li: a(href="#services") Servicios
+                    li: a(href="#blog") Blog
+                    li: a(href="#contact") Contacto
+                    li: a(href="#testimonials") Testimonios
+                    li: a(href="#faq") Preguntas Frecuentes
+                    li: a(href="#about") Acerca de 
+            section.manual-container
+                .manual-container__inner
+                    .manual-container__presentation
+                        h2 Manual de usuario para la web de Logos Institute MX
+                        p Bienvenidos a la página del manual de la web de Logos Institute MX, aquí se publicarán las actualizaciones sobre el diseño y funcionamiento de la web. Cualquier error o sugerencia favor de reportar al contacto <span>omardanielesquivel@gmail.com</span>     para una respuesta lo más rápida posible.
+                    #general.manual-container__text
+                        h2 General
+                        p El menú de la versión de escritorio se encuetra en la parte superior, para dispositivos móviles el menu tiene un cambio ligero, pero se conserva la posición, la barra de menú se esconde con el scroll con dirección abajo y se muestra de nuevo con el scroll con dirección arriba o una vez que se llegue hasta la parte superior de la página.
+                        p En el caso del menú de escritorio, este cuenta con una barra lateral que contiene el menu completo, para salir de él debe darse un click al ícono de la x, también se puede presionar la tecla ESC o dar un click fuera del menú. Lo mismo aplica para los menús de las versiones móiles.
+                        img(src="img/manual/manual-menu.png", alt="Logos Menu")
+                        p Hay 3 páginas principales que corresponden a las mostradas en la barra superior del menú de escritorio, Inicio, Nosotros y Contacto, estas páginas se resaltaran con un subrayado o con texto en negrita en los menús.
+                        h3 Url's
+                        p La mayoría de las urls se generan de manera automática y se vinculan entre si dentro de la web principal, pero algunas de ellas son independientes, como es el caso del administrador y el manual. En varias secciones de la web, después de ingresar una url, el sistema la cambiará, como puede apreciarse en la imagen para el caso del administrador.
+                        img(src="img/manual/manual-admin.png", alt="Logos Menu")
+                        p Para ingresar al administrador, debe añadirse <b>/LogosAdmin</b> al final de la url <b>https://logosinstitute.com.mx</b>, osea ingresar la url <a href="https://logosinstitute.com.mx/LogosAdmin">https://logosinstitute.com.mx/LogosAdmin</a>, de manera similar para el manual debe ingresarse <b>/LogosReadMe</b> para poder ingresar la url <a href="https://logosinstitute.com.mx/LogosReadMe">https://logosinstitute.com.mx/LogosReadMe</a>. En ambos casos deben respetarse la disposición de mayúsculas y minúsculas.
+                        p Finalmente, si se desea compartir el link de la web, este puedes escribirse simplemente como <b>logosinstitute.com.mx</b>, también es posible compartir el link <b>www.logosinstitute.com.mx</b>, <span style="color: var(--main-red);">pero en este caso, para evitar errores con las distintas configuraciones de los navegadores, se debe anteponer el prefijo https://</span> dicho de otra manera, si se desea visualizar <b>www</b> en el dominio, este debe ser compartido como <b>https://www.logosinstitute.com.mx</b>
+                    #index.manual-container__text
+                        h2 Inicio
+                        p En la sección de Incio se usan distintos componentes para presentar la informacíon general de la web, esta puede hacer referencia a links internos, como por ejemplo a nuevos servicios o a links externos. <span style="color: var(--main-red);">Antes de leer la descripción de los componentes de texto del inicio se recomienda leer la descripción general de los componentes de texto de inicio</span>, <a href="#index-text">da un click aqui para leer más.</a>
+                        h3#index-text Textos de Inicio (descripción general)
+                        p En las imágenes se puden observar múltiples campos correspondientes a un Texto Inicio, se pueden observar 2 principales tipos de campos, los campos con letras blancas normales y los campos con letras blancas remarcadas, estos últimos son obligatorios y los primeros opcionales. 
+                        img(src="img/manual/manual-index1.png", alt="Logos Menu")
+                        img(src="img/manual/manual-index2.png", alt="Logos Menu")
+                        p Los textos de inicio contienen 4 elementos principales, los cuales son, un título (llamado Texto Inicio dentro del administrador), una descripción, la url de una imagen y un enlace (este puede ser un link interno o externo), estos son obligatorios dentro del administrador y por eso se remarcan
+                        p Una breve descripción de cada campo es la siguiente
+                        ul 
+                            li <b>Texto inicio</b>
+                                p Este campo corresponde al título del componente, este debe ser descriptivo y preferentemente corto, ya que dependiendo del modelo del componente, este será visible para los visitantes de la web. Un ejemplo de este puede ser un encabezado como "Tenemos nuevos cursos", o "Ve a nuestro nuevo post sobre migración"
+                            li <b>Modelo texto inicio</b>
+                                p Este campo tiene el valor predeterminado componente imagen rojo. Los valores de este campo se dividen en dos principlaes conjuntos. El primero corresponde a los componentes imagen y mosaico, y el segundo corresponde a los sliders, videos y textos. La diferencia principal entre estos conjuntos corresponde a la descripción, en el primer conjunto, estos necesitan de una descripción literal, en el segundo, estos necesitan de una descripción especial, en secciones posteriores se verán mas detalles acerca de los componentes.
+                            li <b>Descripción</b>
+                                p La descripción es quiza el campo más importante, como se describió en el punto anterior, esta debe ser una descripción literal para algunos componentes y una descripción especial para el resto. Si esta es demasiado larga, el sistema generará una nueva página para poder visualizarla por completo.
+                            li <b>Home Text</b>
+                                p Este campo es opcional y corresponde a la versión en inglés del campo Texto inicio, este campo está pensado para la futura traducción del sitio.
+                            li <b>Description</b>
+                                p Este campo es opcional y corresponde a la versión en inglés del campo Descripción, este campo está pensado para la futura traducción del sitio.
+                            li <b>Url imagen</b>
+                                p Este campo es obligatorio, es importante que la url corresponda a la url de una imagen vigente ya que de lo contrario se generará un error de visualización, aunque sea un campo obligatorio, no en todos los componentes se visualizará esta imagen.
+                            li <b>Url imagen 2</b>
+                                p Es un campo opcional, pensado para mejorar la apariencia del componente mosaico, en caso de no estar presente, el componente mosaico repetirá la Url imagen del campo anterior.
+                            li <b>Texto del botón</b>
+                                p Este campo tiene un valor predeterminado correspondiente a Ver más, este puede cambiarse dependiendo la tematica del componente.
+                            li <b>Button text</b>
+                                p Este campo es opcional y corresponde a la versión en inglés del campo Texto del botón, este campo está pensado para la futura traducción del sitio.
+                            li <b>Enlace del texto</b>
+                                p En este campo debe ingresarse una url válida, que apunte a una página interna de la web o a una web externa, esta url se visitará al dar click en el botón del componente (solo para los componentes que lo muestren)
+                            li <b>Orden</b>
+                                p Este campo determina el orden de aparición (arriba-abajo) al momento de visualizarse en el inicio, solo aplica para componentes activos, si dos componentes tienen el mismo orden, estos de ordenarán alfabéticamente segun el campo Texto inicio.
+                            li <b>Estado</b>
+                                p Si este campo tiene el valor Activo, el componente se visualizará en el incio, en caso contrario será archivado, visible solo en el administrador.
+                            li <b>Fecha de creación</b>
+                                p Indica la fecha de creación, este campo de llena de manera automática y es solo de visualización.
+                            li <b>Fecha de edición</b>
+                                p Indica la fecha de la última edición, este campo de llena de manera automática y es solo de visualización.
+                        p Los componentes son los siguientes:
+                        ul 
+                            li: a(href="#one-color").clear-link Componentes de 1 color
+                            li: a(href="#").clear-link Mosaicos
+                            li: a(href="#").clear-link Sliders
+                            li: a(href="#").clear-link Videos
+                            li: a(href="#").clear-link Textos
+                        h3#one-color Componentes de 1 color
+                        p Los componentes de 1 color corresponden a 3 tipos de <b>Texto inicio</b>, los cuales tienen un valor componente imagen rojo, componente imagen verde, componente imagen verde claro en el campo <b>Modelo texto inicio</b>. Estos 3 componentes son equivalentes, sólo cambian en el color de fondo del texto y se visualizan así
+                        img(src="img/manual/manual-index-color.png", alt="Logos Manual")
+                        img(src="img/manual/manual-index-color2.png", alt="Logos Manual")
+                        p El texto se muestra al poner el cursor sobre el componente, en la segunda imagen se visualizan los campos <b>Texto inicio, descripción y Texto del botón</b>, al dar click en el boton, el navegador visitará la web que se introdujo en el campo <b>Enlace del texto</b>, la imagen de fondo es la imagen correspondiente a la url del campo <b>Url Imagen</b>. Si la descripción es demasiado grande, esta podrá ser visualizada por completo al dar click en ella, como se muestra en las siguientes imágenes.
+                        img(src="img/manual/manual-index-color3.png", alt="Logos Manual")
+                        img(src="img/manual/manual-index-color4.png", alt="Logos Manual")

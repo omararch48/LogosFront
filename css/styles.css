@@ -37,6 +37,10 @@
   --readme-blue-2: #5584AC;
   --readme-blue-3: #22577E;
   --readme-yellow: #95D1CC;
+  --readme-blue-1: #22577E;
+  --readme-blue-2: #5584AC;
+  --readme-blue-3: #95D1CC;
+  --readme-yellow: #FAFFAF;
   /* Font */
   --main-font: "Akshar", sans-serif;
 }
@@ -2227,6 +2231,133 @@ label {
   }
   .one-video video {
     width: 90%;
+  }
+}
+.manual {
+  background-color: var(--readme-yellow);
+}
+.manual .arrow-menu {
+  position: fixed;
+  color: var(--main-white);
+  bottom: 5rem;
+  right: 5rem;
+  background-color: var(--readme-blue-1);
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: solid 0.4rem var(--main-white);
+  font-size: 4rem;
+  z-index: 100;
+}
+.manual .arrow-menu:hover {
+  background-color: var(--readme-blue-2);
+}
+.manual .manual-top {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--readme-blue-1);
+  padding: 0 4rem;
+  width: 100%;
+}
+.manual .manual-top span {
+  color: var(--main-white);
+  font-size: 2.8rem;
+  font-weight: bolder;
+}
+.manual .manual-top img {
+  min-width: 20rem;
+  width: 20%;
+}
+.manual .manual-navbar {
+  align-items: center;
+  background-color: var(--readme-blue-2);
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 10rem 0;
+}
+.manual .manual-navbar .manual-menu {
+  list-style: none;
+}
+.manual .manual-navbar .manual-menu li {
+  margin: 1rem 0;
+}
+.manual .manual-navbar .manual-menu li a {
+  color: var(--main-white);
+  font-size: 2.6rem;
+  text-decoration: none;
+}
+.manual .manual-navbar .manual-menu li a:hover {
+  color: var(--complementary-two);
+}
+.manual .manual-container {
+  width: 100%;
+}
+.manual .manual-container .manual-container__inner {
+  background-color: var(--readme-blue-3);
+  box-shadow: 1rem 1rem 0 var(--black-shadow-light);
+  padding: 4rem;
+  position: relative;
+  top: -8rem;
+  left: 5%;
+  width: 90%;
+}
+.manual .manual-container .manual-container__inner .manual-container__presentation h2 {
+  font-size: 3.6rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.manual .manual-container .manual-container__inner .manual-container__presentation p {
+  margin-bottom: 6rem;
+}
+.manual .manual-container .manual-container__inner .manual-container__presentation p span {
+  font-weight: bolder;
+}
+.manual .manual-container .manual-container__inner .manual-container__text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.manual .manual-container .manual-container__inner .manual-container__text h2 {
+  font-size: 2.8rem;
+  margin: 2rem 0;
+}
+.manual .manual-container .manual-container__inner .manual-container__text h3 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin: 1rem 0;
+}
+.manual .manual-container .manual-container__inner .manual-container__text img {
+  margin: 4rem auto;
+  width: 90%;
+}
+.manual .manual-container .manual-container__inner .manual-container__text p {
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+.manual .manual-container .manual-container__inner .manual-container__text p a {
+  color: var(--main-green);
+  text-decoration: none;
+}
+.manual .manual-container .manual-container__inner .manual-container__text p a:hover {
+  color: var(--main-red);
+}
+.manual .manual-container .manual-container__inner .manual-container__text a {
+  color: var(--main-green);
+}
+.manual .manual-container .manual-container__inner .manual-container__text a:hover {
+  color: var(--main-red);
+}
+
+@media (max-width: 500px) {
+  .manual .manual-top {
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
