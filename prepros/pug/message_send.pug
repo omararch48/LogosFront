@@ -1,0 +1,16 @@
+extend components/template.pug
+
+
+block Title 
+    +Title("Gracias por contactarnos")
+block Main
+    +Header("send-message", "")
+    main#send-message
+        section.send-message
+            div(data-aos="zoom-out").send-message__title.title-red
+                h3 Gracias por contactarnos
+            .send-message__content 
+                div(data-aos="zoom-in").error_404__text 
+                    h3 Espera nuestra respuesta, <a href="index.html"> da click aqui para ir al inicio</a>
+block Footer
+    +Footer()

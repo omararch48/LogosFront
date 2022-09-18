@@ -1,16 +1,17 @@
 mixin Slider(sliderContents)
-    section(data-aos="fade-down").slider 
-        .slider__container 
-            ul.slider__media.clear-list
-                each content in sliderContents
-                    if content.length == 1
-                        li.slider__slide: img(src=content[0], loading="lazy")
-                    else
-                        li.slider__slide
-                            .slider__information
-                                h3= content[0]
-                                p= content[1]
-        .slider__container-buttons
-            .slider__buttons
-                each content in sliderContents 
-                    .slider__button
+    section(data-aos="fade-down").section-slider 
+        .slider-container 
+            ul.slider 
+                li.slide: img(src="img/jpg/forest.jpg")
+                li.slide: img(src="img/jpg/forest_3.jpg")
+                li.slide.slide-text
+                    .slide-information
+                        h3 Título del Slide 
+                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam placeat, dolores porro ipsa assumenda ut? Culpa quaerat alias numquam!
+                li.slide: img(src="img/jpg/forest.jpg")
+        .slider-buttons-container 
+            .slider-buttons 
+                .slider__button
+                .slider__button
+                .slider__button
+                .slider__button

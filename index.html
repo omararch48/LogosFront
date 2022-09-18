@@ -117,21 +117,23 @@
                 </div>
               </div>
             </div>
-            <section class="slider" data-aos="fade-down"> 
-              <div class="slider__container"> 
-                <ul class="slider__media clear-list">
-                  <li class="slider__slide"><img src="img/jpg/forest.jpg" loading="lazy"></li>
-                  <li class="slider__slide">
-                    <div class="slider__information">
-                      <h3>Slider 1</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+            <section class="section-slider" data-aos="fade-down"> 
+              <div class="slider-container"> 
+                <ul class="slider"> 
+                  <li class="slide"><img src="img/jpg/forest.jpg"></li>
+                  <li class="slide"><img src="img/jpg/forest_3.jpg"></li>
+                  <li class="slide slide-text">
+                    <div class="slide-information">
+                      <h3>Título del Slide </h3>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam placeat, dolores porro ipsa assumenda ut? Culpa quaerat alias numquam!</p>
                     </div>
                   </li>
-                  <li class="slider__slide"><img src="img/jpg/forest_3.jpg" loading="lazy"></li>
+                  <li class="slide"><img src="img/jpg/forest.jpg"></li>
                 </ul>
               </div>
-              <div class="slider__container-buttons">
-                <div class="slider__buttons">
+              <div class="slider-buttons-container"> 
+                <div class="slider-buttons"> 
+                  <div class="slider__button"></div>
                   <div class="slider__button"></div>
                   <div class="slider__button"></div>
                   <div class="slider__button"></div>
@@ -240,11 +242,6 @@
               </div>
             </section>
     </main>
-    <script src="js/app_confetti.js"> </script>
-    <script src="js/app_modalWelcome.js"></script>
-    <script src="js/app_slider.js"></script>
-    <script src="js/app_tabs.js"></script>
-    <script src="js/app_modal.js"> </script>
         <footer class="footer"> 
           <div class="footer__container">
             <h3 class="footer__social-message">Siguenos en nuestras redes sociales</h3>
@@ -253,7 +250,6 @@
         </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init({duration: 800, once: true});</script>
-    <script src="js/app_menu.js"> </script>
-    <script src="js/app_scroll.js"> </script>
+    <script src="js/index.js" type="module"></script>
   </body>
 </html>

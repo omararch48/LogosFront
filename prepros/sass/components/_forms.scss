@@ -1,0 +1,204 @@
+.title-contact {
+    margin:    0 auto;
+    max-width: 120rem;
+}
+
+.btn-container {
+    align-items:     center;
+    display:         flex;
+    justify-content: center;
+}
+
+.btn {
+    background-color: transparent;
+    border-color:     transparent; 
+    border-radius:    3rem 0; 
+    color:            var(--main-black);
+    display:          block; 
+    font-size:        var(--large); 
+    margin-top:       2rem; 
+    padding:          1.2rem 4rem; 
+    transition:       color 0.4s linear, background-color 0.4s linear;     
+}
+
+.container-forms {
+    align-items:     center;
+    display:         flex;
+    flex-direction:  row;
+    gap:             4rem; 
+    justify-content: center; 
+    margin-top:      0; 
+}
+
+.btn:hover{
+    background-color: var(--main-green);
+    border-radius:    3rem 0;
+    color:            var(--main-white);
+}
+
+.btn:active{
+    transition: scale(0.9);
+}
+
+.background-form {
+    background-color: var(--main-red); 
+    padding-bottom:   4rem; 
+    padding-top:      4rem; 
+}
+
+.formulario {
+    align-items:     center; 
+    display:         flex; 
+    flex-direction:  column; 
+    justify-content: center; 
+    margin:          0 auto; 
+    max-width:       100%; 
+}
+
+.forms-container {
+    align-items:     center; 
+    display:         flex;     
+    gap:             4rem; 
+    justify-content: space-around; 
+}
+
+.formulario fieldset {
+    background-color: var(--main-white); 
+    border:           0.1rem solid var(--complementary-one); 
+    margin-bottom:    2rem; 
+}
+
+.formulario legend {
+    background-color: var(--main-green); 
+    color:            var(--main-white); 
+    font-weight:      900; 
+    margin-bottom:    4rem; 
+    padding:          1rem; 
+    text-align:       center; 
+    text-transform:   uppercase; 
+    width:            100%; 
+}
+
+.campo {
+    display:        flex;
+    flex-direction: row;
+    margin-bottom:  2rem; 
+}
+
+.campo label {
+    flex-basis: 16rem;
+}
+
+.campo input:not([type="radio"]), 
+.campo textarea,
+.campo select {
+    flex: 1; 
+    border: 0.2rem solid var(--complementary-one); 
+    padding: 1rem; 
+    max-width: 100%;
+}
+
+label {
+    padding: 0 2rem;
+}
+
+@media (max-width: 500px) {
+    .btn {
+        background-color: var(--main-green);
+        border-color:     transparent;
+        border-radius:    3rem 0;
+        color:            var(--main-white);
+        display:          block;
+        font-size:        var(--large);
+        margin-top:       2rem;
+        padding:          1.2rem 4rem;
+        transition:       color 0.4s linear, background-color 0.4s linear;    
+    }
+    
+    .container-forms {
+        align-items:     center;
+        display:         flex;
+        flex-direction:  column;
+        gap:             4rem;
+        justify-content: center;
+        margin-top:      6rem;
+        width:           90%;
+    }
+    
+    .btn:hover {
+        /* background-color: var(--main-green); */
+        /* border-radius:    3rem 0; */
+        /* color:            var(--main-white); */
+    }
+    
+    .btn:active{
+        transition: scale(0.9);
+    }
+    
+    .background-form {
+        background-color: var(--main-red);
+        padding-bottom:   4rem;
+        padding-top:      4rem;
+    }
+    
+    .formulario {
+        align-items:     center;
+        display:         flex;
+        flex-direction:  column;
+        justify-content: center;
+        margin:          0 auto;
+        max-width:       100%;
+    }
+    
+    .forms-container {
+        align-items:     center;
+        display:         flex;    
+        gap:             4rem;
+        justify-content: space-around;
+    }
+    
+    .formulario fieldset {
+        background-color: var(--main-white);
+        border:           0.1rem solid var(--complementary-one);
+        border-radius:    4rem 0 4rem 0;
+        box-shadow:       1rem 1rem 2rem var(--main-black);    
+        margin-bottom:    2rem;
+    }
+    
+    .formulario legend {
+        background-color: var(--main-green);
+        border-radius:    4rem 0 4rem 0;
+        box-shadow:       1rem 1rem 2rem var(--main-black);    
+        color:            var(--main-white);
+        font-weight:      900;
+        margin:           0 auto;
+        margin-bottom:    4rem;
+        padding:          1rem;
+        text-align:       center;
+        text-transform:   uppercase;
+        width:            70%;
+    }
+    
+    .campo {
+        display:        flex;
+        flex-direction: column;
+        margin-bottom:  2rem;
+    }
+    
+    .campo label {
+        flex-basis: 2rem;
+    }
+    
+    .campo input:not([type="radio"]), 
+    .campo textarea,
+    .campo select {
+        flex:    1;
+        border:  0.2rem solid var(--complementary-one);
+        padding: 1rem;
+        width:   100%;
+    }
+    
+    label {
+        padding: 0 2rem;
+    }
+}

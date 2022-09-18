@@ -55,3 +55,15 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .qa {    
+        .qa__question.qa-green {
+            .qa__question-title {
+                h3 {
+                    text-align: center;
+                }
+            }
+        }        
+    }
+}

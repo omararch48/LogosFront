@@ -1,33 +1,92 @@
-const sliders = document.querySelectorAll('.slider ');
+export const appSlider = () => {
+    const sliderSections = document.querySelectorAll('.section-slider');
 
 
-sliders.forEach((element) => {
-    let selected = element.querySelectorAll('.slider__slide');
-    let selectedLinks = element.querySelectorAll('.slider__button');
-    let i = 0;
-    const changeSlide = (index=-1) => {
-        selected[i].style.opacity='0';
-        selectedLinks[i].classList.toggle('slider__button--selected');
-        if (index === -1) {
-            if (i === selected.length - 1) {
-                i = 0;
+    sliderSections.forEach(function(element, sliderIndex) {
+        // Constants
+        const   sliderContainer = element.querySelector('.slider-container'),
+                slides = element.querySelectorAll('.slide'),
+                buttons = element.querySelectorAll('.slider__button'),
+                deltaTime = 5000;
+        // Variables
+        let startClientX = 0,
+            endClientX = 0,
+            indexButton = 0,
+            counter;
+        // Functions
+        const changeSlide = (index = -10) => {
+            slides[indexButton].style.opacity='0';
+            buttons[indexButton].classList.remove('slider__button--selected');
+            if (index == -10) {
+                if (indexButton == buttons.length - 1) {
+                    indexButton = 0;
+                } else {
+                    indexButton++;
+                }
             } else {
-                i++;
-            }    
-            selectedLinks[i].classList.toggle('slider__button--selected');
-            selected[i].style.opacity='1';
-        } else {
-            i = index;
-            selected[index].style.opacity='1';
-            selectedLinks[index].classList.toggle('slider__button--selected');
+                indexButton = index;
+            }
+            slides[indexButton].style.opacity='1';
+            buttons[indexButton].classList.add('slider__button--selected');
+        };
+        const selectedDirection = (start, end) => {
+            if ((end - start) > 0) {
+                return 'l';
+            } else {
+                return 'r';
+            }
+        };
+        const restartCounter = () => {
+            clearInterval(counter);
+            counter = null;
+            counter = setInterval(changeSlide, deltaTime);
         }
-    }
-    selected[0].style.opacity='1';
-    selectedLinks[0].classList.toggle('slider__button--selected');
-    selectedLinks.forEach(function(element, index) {
-        element.addEventListener('click', () => {
-            changeSlide(index);
+        
+        
+        // Events
+        sliderContainer.addEventListener('mouseenter', () => {
+            sliderSections[sliderIndex].classList.add('slider-active');
         });
+    
+        sliderContainer.addEventListener('mouseout', () => {
+            sliderSections[sliderIndex].classList.remove('slider-active');
+        });
+    
+        buttons.forEach(function(element, index) {
+            element.addEventListener('click', () => {
+                changeSlide(index);
+                restartCounter();
+            });
+        });
+        
+        sliderContainer.addEventListener('touchstart', (element) => {
+            startClientX = element.touches[0].clientX;
+        });
+        
+        sliderContainer.addEventListener('touchend', (element) => {
+            endClientX = element.changedTouches[0].clientX;
+            if (selectedDirection(startClientX, endClientX) === 'r') {
+                if (indexButton === buttons.length - 1) {
+                    changeSlide(0);
+                    restartCounter();
+                } else {
+                    changeSlide(indexButton + 1);
+                    restartCounter();
+                }
+            } else if (selectedDirection(startClientX, endClientX) === 'l') {
+                if (indexButton === 0) {
+                    changeSlide(buttons.length - 1);
+                    restartCounter();
+                } else {
+                    changeSlide(indexButton - 1);
+                    restartCounter();
+                }
+            }
+        });
+        
+        // Start slider
+        slides[indexButton].style.opacity='1';
+        buttons[indexButton].classList.add('slider__button--selected');
+        counter = setInterval(changeSlide, deltaTime)
     });
-    setInterval(changeSlide, 6000);
-});
+};

@@ -1,0 +1,15 @@
+.created__content {
+    align-items:     center;
+    display:         flex;
+    flex-direction:  column;
+    font-size:       3.2rem;
+    gap:             4rem;
+    justify-content: center;
+    margin:          10rem auto;
+    max-width:       120rem;
+    width:           90%;
+
+    span {
+        font-weight: bolder;
+    }
+}

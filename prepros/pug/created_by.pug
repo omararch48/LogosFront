@@ -1,0 +1,18 @@
+extend components/template.pug
+
+
+block Title 
+    +Title("error_404")
+block Main
+    +Header("error_404", "")
+    main#created
+        section.created
+            div(data-aos="zoom-out").created.title-red
+                h3 Desarrollador
+            div(data-aos="zoom-in").created__content 
+                h2 Web maquetada y codificada por
+                p Omar Daniel Esquivel Sánchez 
+                    span (omardanielesquivel@gmail.com)
+                
+block Footer
+    +Footer()

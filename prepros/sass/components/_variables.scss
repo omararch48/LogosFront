@@ -19,8 +19,16 @@
     --button-red:         rgb(231, 0, 0);
     --button-red-hover:   rgb(200, 3, 3);
     /* Shadows */
-    --black-shadow-light: rgba(0, 0, 0, 0.3);
+    --black-shadow-light:       rgba(0, 0, 0, 0.3);
+    --shadow-main-red:          rgba(146, 39, 44, 0.6);
+    --shadow-main-green:        rgba(39, 74, 53, 0.6);
     --shadow-complementary-one: rgba(177, 198, 175, 0.6);
+    // Colors Buttons
+    --slide-background:         royalblue;
+    --button-gray:              rgb(128, 128, 128);
+    --button-white:             rgb(211, 211, 211);
+    --button-gray-transparent:  rgba(128, 128, 128, 0.5);
+    --button-white-transparent: rgba(211, 211, 211, 0.5);
     /* Calendar */
     --cancel:     #f54f58;
     --to-confirm: #eee350;
